@@ -60,7 +60,7 @@ url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.svg#Monument Ext
 }
 
 .typing-demo {
-    width: 14ch;
+    width: 16ch;
     animation: typing 2s steps(14), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -81,30 +81,63 @@ url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.svg#Monument Ext
     }
 }
 
-/* h1 {
-text-align: center;
-overflow: hidden;
-font-size: 100%;
-border-right: .15em solid #fff;
-white-space: nowrap;
-letter-spacing: .15em;
-animation: typing 2.5s steps(22, end), blink-caret .75s step-end;
-} */
-
-/* h2 {
-font-size: 100%;
-white-space: nowrap;
-overflow: hidden;
-border-right: .15em solid black;
--webkit-animation: typing 2s steps(26, end), blink-caret 1s step-end;
--webkit-animation-delay: 3s;
--webkit-animation-fill-mode: both;
--moz-animation: typing 2s steps(26, end), blink-caret 1s step-end;
--moz-animation-delay: 3s;
-} */
-
 body.wc-body {
     background: #000;
+}
+/* ============> MAIN <============ */
+.wc-main__banner {
+    position: relative;
+}
+.wc-main__banner h1, .wc-main__banner p {
+    position: absolute;
+    color: #fff;
+    font-family: 'Fira Code', sans-serif;
+}
+.wc-main__banner h1 {
+    right: 10%;
+    top: 18rem;
+    font-size: 4rem;
+}
+
+.wc-main__banner p {
+    right: 10%;
+    top: 22rem;
+    font-size: 2rem;
+    width: 15ch;
+    animation: typing 4s steps(15), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2em;
+}
+.wc-main__banner a {
+    position: absolute;
+    right: 10%;
+    top: 28rem;
+    color: #fff;
+    font-family: "Monument Extended", sans-serif;
+    padding: 12px;
+    border: 2px solid #fff;
+}
+
+.wc-main__banner a:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+    animation: border-in 4s ;
+    animation: borde-in .8s ease ;
+}
+
+
+@keyframes borde-in {
+    0% {
+        border-color: transparent;
+    }
+    25% {
+        border-color: #fff;
+    }
+    100% {
+        border-color: transparent;
+    }
 }
 /* ============> SECTIONS <============ */
 
