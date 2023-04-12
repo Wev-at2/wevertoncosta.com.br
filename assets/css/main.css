@@ -81,6 +81,28 @@ url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.svg#Monument Ext
     }
 }
 
+@keyframes bg {
+    0% {
+        background-size: 0 3px, 3px 0, 0 3px, 3px 0
+    }
+
+    25% {
+        background-size: 100% 3px, 3px 0, 0 3px, 3px 0
+    }
+
+    50% {
+        background-size: 100% 3px, 3px 100%, 0 3px, 3px 0
+    }
+
+    75% {
+        background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0
+    }
+
+    100% {
+        background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%
+    }
+}
+
 body.wc-body {
     background: #000;
 }
@@ -117,28 +139,24 @@ body.wc-body {
     color: #fff;
     font-family: "Monument Extended", sans-serif;
     padding: 12px;
-    border: 2px solid #fff;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%),linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%);
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    transition: all 0.4s ease;
+
 }
 
 .wc-main__banner a:hover {
     transform: scale(1.1);
     transition: all 0.4s ease;
-    animation: border-in 4s ;
-    animation: borde-in .8s ease ;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%),linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%);
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    animation: bg 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
 
-
-@keyframes borde-in {
-    0% {
-        border-color: transparent;
-    }
-    25% {
-        border-color: #fff;
-    }
-    100% {
-        border-color: transparent;
-    }
-}
 /* ============> SECTIONS <============ */
 
 section {
