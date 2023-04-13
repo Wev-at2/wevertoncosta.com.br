@@ -144,7 +144,6 @@ body.wc-body {
     background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
     transition: all 0.4s ease;
-
 }
 
 .wc-main__banner a:hover {
