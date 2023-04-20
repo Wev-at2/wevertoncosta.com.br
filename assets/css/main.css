@@ -55,6 +55,7 @@ url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.svg#Monument Ext
 .wrapper {
     /*This part is important for centering*/
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -109,9 +110,12 @@ body.wc-body {
 /* ============> MAIN <============ */
 .wc-main__banner {
     position: relative;
+    background: url(../img/wc.mainHome-BG-16-9.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100%;
 }
 .wc-main__banner h1, .wc-main__banner p {
-    position: absolute;
+    /* position: absolute; */
     color: #fff;
     font-family: 'Fira Code', sans-serif;
 }
@@ -133,7 +137,7 @@ body.wc-body {
     font-size: 2em;
 }
 .wc-main__banner a {
-    position: absolute;
+    /* position: absolute; */
     right: 10%;
     top: 28rem;
     color: #fff;
@@ -156,6 +160,31 @@ body.wc-body {
     animation: bg 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
 
+@media only screen and (max-width: 767px) {
+    .wc-main__banner h1 {
+        right: 10%;
+        top: 2.5rem;
+        font-size: 2rem;
+    }
+    
+    .wc-main__banner p {
+        top: 4.5rem;
+        font-size: 1rem;
+    }
+
+    .wc-main__banner a {
+        position: absolute;
+        top: 6.5rem;
+        font-size: .8rem;
+        padding: 12px;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%),linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%);
+        background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        transition: all 0.4s ease;
+    }
+}
+
 /* ============> SECTIONS <============ */
 
 section {
@@ -173,6 +202,7 @@ section h2 {
 #wc-portifolio ul,
 #wc-habilidades ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 

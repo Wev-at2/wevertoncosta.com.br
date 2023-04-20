@@ -46,6 +46,13 @@
     font-weight: 100;
 }
 
+@media only screen and (max-width: 767px) {
+    .wc-header__logo h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
 .wc-header__menu--nav ul {
     display: flex;
     justify-content: space-between;
