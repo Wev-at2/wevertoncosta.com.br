@@ -50,3 +50,9 @@ table {
 a {
     text-decoration: none;
 }
+#loom-companion-mv3,
+#loom-companion-mv3 section,
+#loom-companion-mv3 div {
+    display: none;
+    height: 0;
+}

@@ -104,40 +104,72 @@ url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.svg#Monument Ext
     }
 }
 
-body.wc-body {
+.wc-body {
     background: #000;
 }
-/* ============> MAIN <============ */
+
+section {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 80%;
+    width: 100%;
+    height: 500px;
+}
+
+section h2 {
+    font-family: "Monument Extended", sans-serif;
+    color: goldenrod;
+}
+
 .wc-main__banner {
-    position: relative;
-    background: url(../img/wc.mainHome-BG-16-9.jpg) no-repeat;
     background-size: cover;
+    max-width: 100%;
     min-height: 100%;
 }
-.wc-main__banner h1, .wc-main__banner p {
-    /* position: absolute; */
+
+.wc-main__banner--content {
+    position: relative;
+}
+
+.wc-main__banner--content_text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-align: center;
+}
+
+.wc-main__banner--content_text h1, .wc-main__banner--content_text p {
     color: #fff;
     font-family: 'Fira Code', sans-serif;
 }
-.wc-main__banner h1 {
+.wc-main__banner--content_text h1 {
     right: 10%;
     top: 18rem;
     font-size: 4rem;
 }
 
-.wc-main__banner p {
+.wc-main__banner--content_text p {
     right: 10%;
     top: 22rem;
     font-size: 2rem;
     width: 15ch;
-    animation: typing 4s steps(15), blink 0.5s step-end infinite alternate;
+    animation: typing 6s steps(15), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-size: 2em;
 }
-.wc-main__banner a {
-    /* position: absolute; */
+
+.wc-main__banner--content_text a {
+    margin-top: 2rem;
     right: 10%;
     top: 28rem;
     color: #fff;
@@ -148,11 +180,14 @@ body.wc-body {
     background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
     background-position: 0 0, 100% 0, 100% 100%, 0 100%;
     transition: all 0.4s ease;
+    animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
 
-.wc-main__banner a:hover {
+.wc-main__banner--content_text a:hover {
     transform: scale(1.1);
     transition: all 0.4s ease;
+    color: #000;
+    background: #fff;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%),linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%);
     background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
@@ -161,18 +196,18 @@ body.wc-body {
 }
 
 @media only screen and (max-width: 767px) {
-    .wc-main__banner h1 {
+    .wc-main__banner--content_text h1 {
         right: 10%;
         top: 2.5rem;
         font-size: 2rem;
     }
     
-    .wc-main__banner p {
+    .wc-main__banner--content_text p {
         top: 4.5rem;
         font-size: 1rem;
     }
 
-    .wc-main__banner a {
+    .wc-main__banner--content_text a {
         position: absolute;
         top: 6.5rem;
         font-size: .8rem;
@@ -183,20 +218,6 @@ body.wc-body {
         background-position: 0 0, 100% 0, 100% 100%, 0 100%;
         transition: all 0.4s ease;
     }
-}
-
-/* ============> SECTIONS <============ */
-
-section {
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-section h2 {
-    font-family: "Monument Extended", sans-serif;
-    color: goldenrod;
 }
 
 #wc-portifolio ul,
