@@ -220,11 +220,21 @@ section h2 {
     }
 }
 
+#wc-portifolio {display: none;}
+
 #wc-portifolio ul,
 #wc-habilidades ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+#wc-habilidades ul {
+    gap: 3rem;
+}
+
+#wc-habilidades li {
+    flex: 1;
 }
 
 #wc-portifolio ul a {
