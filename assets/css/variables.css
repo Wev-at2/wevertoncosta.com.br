@@ -1,0 +1,17 @@
+:root {
+    --main-bg-color: #000;
+    --main-font-color-one: goldenrod;
+    --main-font-color-two: #fff;
+    --font-family-monument: "Monument Extended", sans-serif;
+    --font-family-firacode: 'Fira Code', sans-serif;
+    --font-family-opensans: 'Open Sans', sans-serif;
+}
+element {
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color-one);
+    color: var(--main-font-color-two);
+    font-family: var(--font-family-monument);
+    font-family: var(--font-family-firacode);
+    font-family: var(--font-family-opensans);
+}
+  
