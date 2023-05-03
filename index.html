@@ -8,8 +8,8 @@
     <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet">
     <!-- <link href="//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended" rel="stylesheet" type="text/css"/> -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="./assets/img/icon_w.png" type="image/x-icon">
-    <link rel="icon" href="./assets/img/icon_w.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="wc-body">
@@ -30,7 +30,7 @@
                     <li><a href="#wc-sobre-mim">Sobre mim</a></li>
                     <li><a href="#wc-portifolio">Portifólio</a></li>
                     <li><a href="#wc-skills">Habilidades</a></li>
-                    <li><a href="#wc-contato">Contato</a></li>
+                    <li><a href="#wc-contact">Contato</a></li>
                 </ul>
             </nav>
             <nav id="nav" class="wc-header__menu--nav_mobile">
@@ -133,10 +133,27 @@
             </div>
         </section>
           
-        <section id="wc-contato">
+        <section id="wc-contact">
             <div>
                 <h2>Contato</h2>
                 <p>Entre em contato comigo</p>
+                <form action="post" class="wc-contact__form">
+                    <div class="wc-contact__name">
+                        <label for="wc-contact__name">Nome</label>
+                        <input type="text" name="name" required id="wc-contact__name">
+                    </div>
+                    <div class="wc-contact__email">
+                        <label for="wc-contact__email">E-mail</label>
+                        <input type="email" name="email" required id="wc-contact__email">
+                    </div>
+                    <div class="wc-contact__message">
+                        <label for="wc-contact__message">Mensagem</label>
+                        <textarea name="message" id="wc-contact__message" cols="60" rows="10"></textarea>
+                    </div>
+                    <div class="wc-contact__submit">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
             </div>
         </section>
     </main>
