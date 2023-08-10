@@ -1,0 +1,44 @@
+.wc-contact__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+#wc-contact {
+    margin: 2rem auto;
+}
+
+#wc-contact label {
+    font-family: var(--font-family-monument);
+}
+.wc-contact__form > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.wc-contact__form > div input {
+    padding: .5rem;
+    font-size: 1rem;
+    /* background: transparent; */
+    /* color: var(--main-font-color-two); */
+}
+.wc-contact__form > div textarea {
+    padding: .5rem;
+    font-size: 1rem;
+}
+.wc-contact__name,
+.wc-contact__email {
+    max-width: 100%;
+    flex: 1;
+}
+.wc-contact__message {
+    width: 100%;
+}
+.wc-contact__submit {
+    width: 100%;
+}
+.wc-contact__submit input {
+    font-family: var(--font-family-monument);
+    text-transform: uppercase;
+}
