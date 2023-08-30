@@ -60,9 +60,8 @@
     font-size: 2em;
 }
 @keyframes typing {
-    from {
-        width: 0;
-    }
+    from { width: 0; }
+    to { width: 100%; }
 }
 @keyframes blink {
     50% {
@@ -93,27 +92,18 @@
 .wc-body {
     background-color: var(--main-bg-color);
 }
-section {
-    font-family: var(--font-family-opensans);
-    color: var(--main-font-color-two);
-    margin: 0 auto;
-    max-width: 80%;
-    width: 100%;
-}
-section h2 {
-    font-family: var(--font-family-monument);
-    color: var(--main-font-color-one);
-    font-size: 1rem;
-}
 .wc-main__banner {
     background-size: cover;
     max-width: 100%;
     min-height: 100%;
 }
-.wc-main__banner--content {
+.wc-main__banner--container {
     position: relative;
 }
-.wc-main__banner--content_text {
+.wc-main__banner--img {
+    opacity: .2;
+}
+.wc-main__banner--content {
     position: absolute;
     top: 30%;
     left: 10%;
@@ -124,34 +114,30 @@ section h2 {
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 1rem;
-    text-align: center;
+    text-align: left;
 }
-.wc-main__banner--content_text h1, .wc-main__banner--content_text p {
+.wc-main__banner--content_title, .wc-main__banner--content_description {
+    font-family: var(--font-family-two);
     color: var(--main-font-color-two);
-    font-family: var(--font-family-firacode);
 }
-.wc-main__banner--content_text h1 {
-    right: 10%;
-    top: 18rem;
+.wc-main__banner--content_title {
     font-size: 4rem;
 }
-.wc-main__banner--content_text p {
-    right: 10%;
-    top: 22rem;
+.wc-main__banner--content_description {
+    font-family: var(--font-family-two);
+    text-align: left;
     font-size: 2rem;
-    width: 15ch;
-    animation: typing 6s steps(15), blink 0.5s step-end infinite alternate;
+    display: inline-block; /* Altera para inline-block */
+    animation: typing 6s steps(45, end) forwards, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-size: 2em;
 }
-.wc-main__banner--content_text a {
-    margin-top: 2rem;
-    right: 10%;
-    top: 28rem;
+.wc-main__banner--content_link {
+    font-family: var(--font-family-one);
     color: var(--main-font-color-two);
-    font-family: var(--font-family-monument);
+    width: max-content;
+    margin-top: 2rem;
     padding: 12px;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%),linear-gradient(to right, #fff 100%, #fff 100%),linear-gradient(to bottom, #fff 100%, #fff 100%);
@@ -160,7 +146,7 @@ section h2 {
     transition: all 0.4s ease;
     animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
-.wc-main__banner--content_text a:hover {
+.wc-main__banner--content_link:hover {
     transform: scale(1.1);
     transition: all 0.4s ease;
     color: #000;
@@ -172,16 +158,16 @@ section h2 {
     animation: bg 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
 @media only screen and (max-width: 767px) {
-    .wc-main__banner--content_text h1 {
+    .wc-main__banner--content_title {
         right: 10%;
         top: 2.5rem;
         font-size: 2rem;
     }    
-    .wc-main__banner--content_text p {
+    .wc-main__banner--content_description {
         top: 4.5rem;
         font-size: 1rem;
     }
-    .wc-main__banner--content_text a {
+    .wc-main__banner--content_link {
         position: absolute;
         top: 6.5rem;
         font-size: .8rem;

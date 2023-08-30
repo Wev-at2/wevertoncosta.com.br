@@ -1,4 +1,16 @@
-
+section {
+    font-family: var(--font-family-three);
+    color: var(--main-font-color-two);
+    margin: 0 auto;
+    max-width: 80%;
+    width: 100%;
+}
+section h2 {
+    font-family: var(--font-family-one);
+    color: var(--main-font-color-one);
+    font-size: 1rem;
+}
+/* ==================== PORTIFÓLIO ==================== */
 #wc-portifolio {
     display: none;
 }
@@ -6,7 +18,12 @@
     color: var(--main-font-color-two);
     text-decoration: none;
 }
-#wc-portifolio ul,
+#wc-portifolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* ==================== SKILLS ==================== */
 #wc-skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +47,8 @@
     transition: all 0.4s ease;
 }
 .wc-skills__item--text {
-    font-family: var(--font-family-monument);
+    font-family: var(--font-family-one);
     margin-top: 1rem;
     text-align: center;
 }
+/* ====================  ========== */

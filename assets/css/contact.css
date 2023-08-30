@@ -9,7 +9,7 @@
 }
 
 #wc-contact label {
-    font-family: var(--font-family-monument);
+    font-family: var(--font-family-one);
 }
 .wc-contact__form > div {
     display: flex;
@@ -39,6 +39,6 @@
     width: 100%;
 }
 .wc-contact__submit input {
-    font-family: var(--font-family-monument);
+    font-family: var(--font-family-one);
     text-transform: uppercase;
 }
