@@ -43,22 +43,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"); */
 /* @import url(https://fonts.cdnfonts.com/css/monument-extended); */
 /* @import url(//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended); */
-.wrapper {
-  /*This part is important for centering*/
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.typing-demo {
-  width: 16ch;
-  animation: typing 2s steps(14), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
 @keyframes typing {
   from {
     width: 0;
@@ -96,10 +80,14 @@
 .wc-body {
   background-color: var(--main-bg-color);
 }
+.wc-main {
+  margin-top: 5rem;
+}
 .wc-main__banner {
   background-size: cover;
   max-width: 100%;
   min-height: 100%;
+  padding: 0;
 }
 .wc-main__banner--container {
   position: relative;

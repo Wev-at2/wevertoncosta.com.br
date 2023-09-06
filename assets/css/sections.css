@@ -1,54 +1,60 @@
 section {
-    font-family: var(--font-family-three);
-    color: var(--main-font-color-two);
-    margin: 0 auto;
-    max-width: 80%;
-    width: 100%;
+  font-family: var(--font-family-three);
+  color: var(--main-font-color-two);
+  margin: 0 auto;
+  padding: 9.375rem 0 0;
+  max-width: 80%;
+  width: 100%;
 }
 section h2 {
+    font-size: 1.2rem;
     font-family: var(--font-family-one);
     color: var(--main-font-color-one);
-    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+section p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
 /* ==================== PORTIFÓLIO ==================== */
-#wc-portifolio {
-    display: none;
+/* #wc-projects {
+  display: none;
+} */
+#wc-projects ul a {
+  color: var(--main-font-color-two);
+  text-decoration: none;
 }
-#wc-portifolio ul a {
-    color: var(--main-font-color-two);
-    text-decoration: none;
-}
-#wc-portifolio ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#wc-projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 /* ==================== SKILLS ==================== */
 #wc-skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.wc-skills__title {
-    margin-bottom: 3rem;
-}
+/* .wc-skills__title {
+  margin-bottom: 3rem;
+} */
 .wc-skills__items {
-    gap: 3rem;
+  gap: 3rem;
 }
 .wc-skills__item {
-    flex: 1 0 40px;
-    transition: all 0.4s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 1 0 40px;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .wc-skills__item:hover {
-    transform: scale(1.1);
-    transition: all 0.4s ease;
+  transform: scale(1.1);
+  transition: all 0.4s ease;
 }
 .wc-skills__item--text {
-    font-family: var(--font-family-one);
-    margin-top: 1rem;
-    text-align: center;
+  font-family: var(--font-family-one);
+  margin-top: 1rem;
+  text-align: center;
 }
 /* ====================  ========== */
