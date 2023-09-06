@@ -1,79 +1,69 @@
 .wc-header {
-    font-family: "Monument Extended", sans-serif;
+    font-family: var(--font-family-one);
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 10%;
+    padding: 10px 10%;
     background: rgb(5, 25, 51);
     background: linear-gradient(
         0deg,
         rgba(5, 25, 51, 1) 0%,
         rgba(9, 51, 102, 1) 50%
     );
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
-
 .wc-header a {
     /*todos os links do header*/
     color: #fff;
     text-decoration: none;
-    /* font-weight: 100; */
 }
-
 .wc-header__logo {
     position: relative;
 }
-
 .wc-header__logo a {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffffff;
     transition: all 0.4s ease;
 }
-
 .wc-header__logo a:is(:hover, :focus) h1 {
     transform: scale(1.1);
     transition: all 0.4s ease;
 }
-
 .wc-header__logo h1 {
     transition: all 0.4s ease;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 100;
 }
-
 @media only screen and (max-width: 767px) {
     .wc-header__logo h1 {
         font-size: 1.5rem;
     }
-
 }
-
 .wc-header__menu--nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
 }
-
 .wc-header__menu--nav ul li a {
     position: relative;
     text-transform: uppercase;
     transition: all 0.4s ease;
     font-size: 0.8125rem;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
     outline: none;
 }
-
 .wc-header__menu--nav ul li a::after {
     content: "";
     position: absolute;
     left: 0.3rem;
-    bottom: -10px;
+    bottom: 0;
     display: inline-block;
     vertical-align: middle;
     height: 2px;
@@ -86,7 +76,6 @@
 .wc-header__menu--nav ul li a:is(:hover, :focus)::after {
     width: calc(100% - 0.3rem);
 }
-
 #menu {
     list-style: none;
     display: flex;
