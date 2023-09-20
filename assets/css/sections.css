@@ -16,18 +16,19 @@ section p {
     line-height: 1.5;
     margin-bottom: 1rem;
 }
-/* ==================== PORTIFÓLIO ==================== */
-/* #wc-projects {
-  display: none;
+/* ==================== EXPERIÊNCIAS ==================== */
+/* .wc-experience__items {
 } */
-#wc-projects ul a {
-  color: var(--main-font-color-two);
-  text-decoration: none;
-}
-#wc-projects ul {
+.wc-experience__item ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: .5rem;
+}
+.wc-experience__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
 }
 /* ==================== SKILLS ==================== */
 #wc-skills ul {
@@ -56,5 +57,18 @@ section p {
   font-family: var(--font-family-one);
   margin-top: 1rem;
   text-align: center;
+}
+/* ==================== PORTIFÓLIO ==================== */
+/* #wc-projects {
+  display: none;
+} */
+#wc-projects ul a {
+  color: var(--main-font-color-two);
+  text-decoration: none;
+}
+#wc-projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 /* ====================  ========== */
