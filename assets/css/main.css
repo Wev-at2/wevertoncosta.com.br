@@ -40,9 +40,6 @@
   src: url("../fonts/MonumentExtended-Ultrabold.otf")
     format("embedded-opentype");
 }
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"); */
-/* @import url(https://fonts.cdnfonts.com/css/monument-extended); */
-/* @import url(//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended); */
 @keyframes typing {
   from {
     width: 0;
@@ -51,11 +48,11 @@
     width: 100%;
   }
 }
-@keyframes blink {
+/* @keyframes blink {
   50% {
     border-color: transparent;
   }
-}
+} */
 @keyframes bg {
   0% {
     background-size: 0 3px, 3px 0, 0 3px, 3px 0;
@@ -99,14 +96,26 @@
   position: absolute;
   top: 30%;
   left: 10%;
+  right: 10%;
   max-width: 70%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
   gap: 1rem;
   text-align: left;
+}
+.wc-main__banner--content_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wc-main__banner--content_img {
+  width: 30%;
+}
+.wc-main__banner--content_img > img {
+  width: 100%;
 }
 .wc-main__banner--content_title,
 .wc-main__banner--content_description {
@@ -117,15 +126,27 @@
   font-size: 4rem;
 }
 .wc-main__banner--content_description {
-  display: inline-block; /* Altera para inline-block */
+  display: inline-block;
   font-family: monospace;
   font-size: 2em;
   text-align: left;
-  animation: typing 4s steps(45) forwards,
-    blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
+}
+.typewriter:after {
+  content: "|";
+  margin-left: 8px;
+  opacity: 1;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 .wc-main__banner--content_link {
   font-family: var(--font-family-one);
@@ -157,6 +178,7 @@
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
   animation: bg 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
+
 @media only screen and (max-width: 767px) {
   .wc-main__banner--content_title {
     right: 10%;
