@@ -1,15 +1,21 @@
 :root {
-    --main-bg-color: #000;
-    --main-font-color-one: goldenrod;
-    --main-font-color-two: #fff;
+    --color-golden:      goldenrod;
+    --color-white:       #fff;
+    --color-black:       #000;
+
+    --main-bg-color:        var(--color-black);
+    --main-font-color-one:  var(--color-golden);
+    --main-font-color-two:  var(--color-white);
+
     --font-family-one: "Monument Extended", sans-serif;
     --font-family-two: 'Fira Code', sans-serif;
-    --font-family-three: 'Open Sans', sans-serif;
+    --font-family-three: 'Open Sans', sans-serif;    
 }
 element {
     background-color: var(--main-bg-color);
     color: var(--main-font-color-one);
     color: var(--main-font-color-two);
+
     font-family: var(--font-family-one);
     font-family: var(--font-family-two);
     font-family: var(--font-family-three);
