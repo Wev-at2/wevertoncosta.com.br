@@ -1,0 +1,25 @@
+.wc-header__logo {
+  position: relative;
+}
+.wc-header__logo--link {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.wc-header__logo--link:is(:hover, :focus) .wc-header__logo--title {
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+.wc-header__logo--title {
+  transition: all 0.4s ease;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: var(--font-family-one);
+}
+@media only screen and (max-width: 767px) {
+  .wc-header__logo--title {
+    font-size: 1.5rem;
+  }
+}
