@@ -18,13 +18,13 @@
 }
 .wc-contact__form > div input {
     padding: .5rem;
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     /* background: transparent; */
     /* color: var(--main-font-color-two); */
 }
 .wc-contact__form > div textarea {
     padding: .5rem;
-    font-size: 1rem;
+    font-size: var(--font-size-base);
 }
 .wc-contact__name,
 .wc-contact__email {

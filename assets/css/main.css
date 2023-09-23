@@ -29,6 +29,10 @@
 }
 .wc-main__banner--content_img {
   width: 30%;
+  transition: var(--transition);
+}
+.wc-main__banner--content_img:hover {
+  transform: scale(1.05);
 }
 .wc-main__banner--content_img > img {
   width: 100%;
@@ -44,12 +48,12 @@
   color: var(--main-font-color-two);
 }
 .wc-main__banner--content_title {
-  font-size: 4rem;
+  font-size: var(--font-size-giant);
 }
 .wc-main__banner--content_description {
   display: inline-block;
   font-family: monospace;
-  font-size: 2em;
+  font-size: var(--font-size-big);
   text-align: left;
 }
 .wc-main__banner--content_link {
@@ -86,16 +90,16 @@
   .wc-main__banner--content_title {
     right: 10%;
     top: 2.5rem;
-    font-size: 2rem;
+    font-size: var(--font-size-title);
   }
   .wc-main__banner--content_description {
     top: 4.5rem;
-    font-size: 1rem;
+    font-size: var(--font-size-base);
   }
   .wc-main__banner--content_link {
     position: absolute;
     top: 6.5rem;
-    font-size: 0.8rem;
+    font-size: var(--font-size-medium);
     padding: 12px;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, #fff 100%, #fff 100%),

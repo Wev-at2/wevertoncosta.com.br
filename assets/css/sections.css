@@ -13,9 +13,9 @@ section {
   width: 100%;
 }
 section h2 {
-  font-size: 1.2rem;
-  font-family: var(--font-family-one);
   color: var(--main-font-color-one);
+  font-family: var(--font-family-one);
+  font-size: var(--font-size-subtitle);
   margin-bottom: 1.5rem;
 }
 section p {

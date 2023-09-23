@@ -7,15 +7,15 @@
   gap: 0.5rem;
 }
 .wc-header__menu--nav_item a {
-  position: relative;
+  color: var(--main-font-color-two);
+  font-family: var(--font-family-one);
+  font-size: var(--font-size-medium);
   text-transform: uppercase;
-  transition: all 0.4s ease;
-  font-size: 0.8125rem;
+  text-decoration: none;
   padding: 0.5rem;
   outline: none;
-  color: #fff;
-  text-decoration: none;
-  font-family: var(--font-family-one);
+  position: relative;
+  transition: var(--transition);
 }
 .wc-header__menu--nav_item a::after {
   content: "";
