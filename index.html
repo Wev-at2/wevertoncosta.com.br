@@ -17,36 +17,26 @@
 <body class="wc-body">
     <header class="wc-header">
         <div class="wc-header__logo">
-            <a href="" class="">
-                <h1 class="">
+            <a href="" class="wc-header__logo--link">
+                <h1 class="wc-header__logo--title">
                     Weverton
-                    <br />
+                    <br>
                     Costa
                 </h1>
             </a>
         </div>
         <div class="wc-header__menu">
-            <nav aria-label="primária" class="wc-header__menu--nav js-menu">
-                <ul>
-                    <li><a href="#wc-main-home">Home</a></li>
-                    <li><a href="#wc-about">Sobre mim</a></li>
-                    <li><a href="#wc-skills">Habilidades</a></li>
-                    <li><a href="#wc-experience">Experiências</a></li>
-                    <li><a href="#wc-projects">Portifólio</a></li>
-                    <li><a href="#wc-contact">Contato</a></li>
-                </ul>
-            </nav>
-            <nav id="nav" class="wc-header__menu--nav_mobile">
+            <nav aria-label="primária" class="wc-header__menu--nav wc-header__menu--nav_mobile js-menu" id="header-nav">
                 <button id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
                     menu<span id="hamburguer"></span>
                 </button>
-                <ul id="menu" role="menu">
-                    <li><a href="#wc-main-home">Home</a></li>
-                    <li><a href="#wc-about">Sobre mim</a></li>
-                    <li><a href="#wc-skills">Habilidades</a></li>
-                    <li><a href="#wc-experience">Experiências</a></li>
-                    <li><a href="#wc-projects">Portifólio</a></li>
-                    <li><a href="#wc-contact">Contato</a></li>
+                <ul class="wc-header__menu--nav_items" role="menu">
+                    <li class="wc-header__menu--nav_item"><a href="#wc-main-home">Início</a></li>
+                    <li class="wc-header__menu--nav_item"><a href="#wc-about">Sobre mim</a></li>
+                    <li class="wc-header__menu--nav_item"><a href="#wc-skills">Habilidades</a></li>
+                    <li class="wc-header__menu--nav_item"><a href="#wc-experience">Experiências</a></li>
+                    <li class="wc-header__menu--nav_item"><a href="#wc-projects">Portifólio</a></li>
+                    <li class="wc-header__menu--nav_item"><a href="#wc-contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -59,10 +49,12 @@
                 <div class="wc-main__banner--content">
                     <div class="wc-main__banner--content_text">
                         <h1 class="wc-main__banner--content_title">Hello World</h1>
-                        <p class="wc-main__banner--content_description typewriter">Eu sou o Weverton, desenvolvedor front-end Jr...</p>
+                        <p class="wc-main__banner--content_description typewriter">
+                            Eu sou o Weverton, desenvolvedor front-end...
+                        </p>
                         <a class="wc-main__banner--content_link" href="#wc-about">Conheça mais sobre mim</a>
                     </div>
-                    <div class="wc-main__banner--content_img" >
+                    <div class="wc-main__banner--content_img">
                         <img src="./assets/img/profile-pic (1).png" alt="" style="display: block; max-width: 100%; height: auto;">
                     </div>
                 </div>
@@ -71,30 +63,25 @@
 
         <section id="wc-about" class="wc-about">
             <div>
-                <h2>Sobre mim</h2>
-                <p>
-                    Me Chamo Weverton, tenho 26 anos e sou desenvolvedor front-end apaixonado por tecnologia, com experiência na área e atualmente buscando novos desafios.
+                <h2 class="wc-about__title">Sobre mim</h2>
+                <p class="wc-about__description">
+                    Me Chamo <strong>Weverton Costa</strong> ou simplesmente <strong>"Wev"</strong>, tenho 26 anos e sou desenvolvedor front-end apaixonado por tecnologia, com experiência na área e sempre buscando novos desafios.
                 </p>
-                <p>
+                <p class="wc-about__description">
+                    Gosto muito de trabalhar com o <strong>CSS</strong>, <strong>Sass</strong> e com toda a diversidade de estilos que posso aplicar nos sites, trabalho também com <strong>JavaScript</strong> e estou gostando muito de aprender a linguagem <strong>LIQUID da SHOPIFY</strong>, é com ela que trabalhamos para as estruturas dos sites da Vnda.
+                </p>
+                <p class="wc-about__description">
                     Atuei como um dos colaboradores do time de devs na <strong>THE ALFRED</strong> com as especialidades em <strong>VTEX</strong> e <strong>Vnda. by Olist</strong>.
+                    Possuo expertise também plataformas de sistemas de CRM, incluindo o <strong>SalesForce</strong> e <strong>Wake (All In)</strong>.
                 </p>
-                <p>
-                    Gosto muito de trabalhar com o CSS e com toda a diversidade de estilos que posso aplicar no sites, mas também trabalho com JavaScript, Sass e estou gostando muito de aprender a linguagem LIQUID da SHOPIFY, é com ela que trabalhamos para as estruturas dos sites da Vnda.
+                <p class="wc-about__description">
+                    Minhas habilidades técnicas são fundamentais para meu desempenho, e sou experiente em linguagens como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Sass</strong>, <strong>Pug</strong> e <strong>Liquid</strong>, permitindo-me criar interfaces atraentes e funcionais para diversos projetos. Meu primeiro contato com a programação foi com o <strong>VISUAL BASIC FOR APPLICATIONS (VBA)</strong>, na qual era responsável pelas automações de processos em planilhas <strong>EXCEL</strong>.
                 </p>
-                <p>
-                    Possuo expertise em plataformas como VTEX, Vnda by Olist, deco.cx e sistemas de CRM, incluindo o SalesForce e Wake (All In).
-                </p>
-                <p>
-                    Minhas habilidades técnicas são fundamentais para meu desempenho, e sou experiente em linguagens como HTML, CSS, JavaScript, Sass, Pug e Liquid, permitindo-me criar interfaces atraentes e funcionais para diversos projetos. Meu primeiro contato com a programação foi com o VISUAL BASIC FOR APPLICATIONS (VBA), na qual era responsável pelas automações de processos em planilhas EXCEL.
-                </p>
-                <p>
-                    Busco constantemente atualizações e tendências no mundo do desenvolvimento front-end para oferecer soluções inovadoras e eficientes. Sou um colaborador proativo e comprometido, sempre pronto para enfrentar novos desafios e agregar valor aos projetos.
-                </p>
-                <p>
+                <p class="wc-about__description">
                     Tenho orgulho de meu histórico de contribuições para aprimorar a experiência do usuário em diversos projetos, otimizando o desempenho, a acessibilidade e a usabilidade. Minha paixão por inovação impulsiona meu interesse em explorar novas tecnologias e ferramentas que possam levar os produtos aos mais altos padrões do mercado.
                 </p>
-                <p>
-                    No meu tempo livre gosto de compor músicas com o meu violão, curtir com amigos, colar nos cultos da igreja e passar um tempo de qualidade com a minha esposa.
+                <p class="wc-about__description">
+                    No meu tempo livre gosto de <strong>compor músicas com o meu violão</strong>, <strong>curtir com os amigos</strong>, <strong>colar nos cultos da igreja</strong> e <strong>passar um tempo de qualidade com a minha esposa (Pri)</strong>.
                 </p>
             </div>
         </section>
@@ -190,12 +177,12 @@
         <section id="wc-projects" class="wc-projects">
             <div>
                 <h2>Portifólio</h2>
-                <ul>
-                    <li><a href="">PROJETO 1</a></li>
-                    <li><a href="">PROJETO 2</a></li>
-                    <li><a href="">PROJETO 3</a></li>
-                    <li><a href="">PROJETO 4</a></li>
-                    <li><a href="">PROJETO 5</a></li>
+                <ul class="wc-projects__items">
+                    <li class="wc-projects__item"><a href="">PROJETO 1</a></li>
+                    <li class="wc-projects__item"><a href="">PROJETO 2</a></li>
+                    <li class="wc-projects__item"><a href="">PROJETO 3</a></li>
+                    <li class="wc-projects__item"><a href="">PROJETO 4</a></li>
+                    <li class="wc-projects__item"><a href="">PROJETO 5</a></li>
                 </ul>
             </div>
         </section>
@@ -224,6 +211,7 @@
             </div>
         </section>
     </main>
+
     <footer class="wc-footer">
         <div class="wc-footer__rightReserved">
             <p class="wc-footer__rightReserved--text">
@@ -257,7 +245,7 @@
                     </a>
                 </li>
                 <li class="wc-footer__socials--item">
-                    <a class="wc-footer__socials--item_link" title="Weverton Costa | WhatsApp" href="https://api.whatsapp.com/send?phone=5511944421617">
+                    <a class="wc-footer__socials--item_link" title="Weverton Costa | WhatsApp" href="https://api.whatsapp.com/send?phone=5511981304510">
                         WhatsApp
                         <!-- <img src="" alt="Social WhatsApp" > -->
                     </a>
@@ -265,8 +253,8 @@
             </ul>
         </div>
     </footer>
-    <script type="module" src="./assets/js/main.js"></script>
-    <script src="./assets/js/menu_mobile.js"></script>
-    <script src="./assets/js/menu.js"></script>
+
+    <script src="./assets/js/main.js" type="module"></script>
 </body>
+
 </html>
