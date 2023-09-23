@@ -1,82 +1,3 @@
-@font-face {
-  font-family: "BebasNeue-Bold";
-  src: url("../fonts/BebasNeue-Bold.eot");
-  src: url("../fonts/BebasNeue-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/BebasNeue-Bold.svg#BebasNeue-Bold") format("svg"),
-    url("../fonts/BebasNeue-Bold.ttf") format("truetype"),
-    url("../fonts/BebasNeue-Bold.woff") format("woff"),
-    url("../fonts/BebasNeue-Bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "BebasNeue-Regular";
-  src: url("../fonts/BebasNeue-Regular.eot");
-  src: url("../fonts/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/BebasNeue-Regular.svg#BebasNeue-Regular") format("svg"),
-    url("../fonts/BebasNeue-Regular.ttf") format("truetype"),
-    url("../fonts/BebasNeue-Regular.woff") format("woff"),
-    url("../fonts/BebasNeue-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "DINOT-Bold";
-  src: url("../fonts/DINOT-Bold.eot");
-  src: url("../fonts/DINOT-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/DINOT-Bold.svg#DINOT-Bold") format("svg"),
-    url("../fonts/DINOT-Bold.ttf") format("truetype"),
-    url("../fonts/DINOT-Bold.woff") format("woff"),
-    url("../fonts/DINOT-Bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Monument Extended";
-  src: url("../fonts/MonumentExtended-Regular.otf");
-  src: url("../fonts/MonumentExtended-Ultrabold.otf")
-    format("embedded-opentype");
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-/* @keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-} */
-@keyframes bg {
-  0% {
-    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
-  }
-
-  25% {
-    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
-  }
-
-  50% {
-    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
-  }
-
-  75% {
-    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
-  }
-
-  100% {
-    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
-  }
-}
-.wc-body {
-  background-color: var(--main-bg-color);
-}
 .wc-main {
   margin-top: 5rem;
 }
@@ -106,16 +27,16 @@
   gap: 1rem;
   text-align: left;
 }
-.wc-main__banner--content_text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
 .wc-main__banner--content_img {
   width: 30%;
 }
 .wc-main__banner--content_img > img {
   width: 100%;
+}
+.wc-main__banner--content_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .wc-main__banner--content_title,
 .wc-main__banner--content_description {
@@ -130,23 +51,6 @@
   font-family: monospace;
   font-size: 2em;
   text-align: left;
-}
-.typewriter:after {
-  content: "|";
-  margin-left: 8px;
-  opacity: 1;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
 }
 .wc-main__banner--content_link {
   font-family: var(--font-family-one);
@@ -178,7 +82,6 @@
   background-position: 0 0, 100% 0, 100% 100%, 0 100%;
   animation: bg 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
-
 @media only screen and (max-width: 767px) {
   .wc-main__banner--content_title {
     right: 10%;
