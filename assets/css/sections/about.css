@@ -1,4 +1,10 @@
-.wc-about__description strong {
-    font-weight: 700;
-    color: var(--color-golden);
+.wc-about__description strong,
+.wc-about__description a {
+  font-weight: 700;
+  color: var(--color-golden);
+}
+@media only screen and (max-width: 767px) {
+  .wc-about__description {
+    text-align: justify;
+  }
 }
