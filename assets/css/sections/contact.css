@@ -1,21 +1,20 @@
+#wc-contact {
+    margin: 2rem auto;
+}
 .wc-contact__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
 }
-#wc-contact {
-    margin: 2rem auto;
-}
-
-#wc-contact label {
-    font-family: var(--font-family-one);
-}
 .wc-contact__form > div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: .5rem;
+}
+.wc-contact__form > div label {
+    font-family: var(--font-family-one);
 }
 .wc-contact__form > div input {
     padding: .5rem;

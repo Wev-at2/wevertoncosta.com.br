@@ -1,0 +1,9 @@
+.wc-projects__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wc-projects__item a {
+  color: var(--main-font-color-two);
+  text-decoration: none;
+}

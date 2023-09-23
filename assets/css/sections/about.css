@@ -1,0 +1,4 @@
+.wc-about__description strong {
+    font-weight: 700;
+    color: var(--color-golden);
+}

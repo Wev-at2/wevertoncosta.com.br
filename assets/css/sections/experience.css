@@ -1,0 +1,11 @@
+.wc-experience__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.wc-experience__item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
