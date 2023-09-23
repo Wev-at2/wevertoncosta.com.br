@@ -1,0 +1,36 @@
+/* ============> FOOTER <============ */
+.wc-footer {
+    /* font-family: 'Monument Extended', sans-serif;
+    font-size: 12px; */
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background: rgb(5, 25, 51);
+    background: linear-gradient(
+        0deg,
+        rgba(5, 25, 51, 1) 0%,
+        rgba(9, 51, 102, 1) 50%
+    );
+}
+.wc-footer__socials--items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.wc-footer__socials--item_link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.wc-footer__socials--item_link:hover {
+    transform: scale(1.1);
+    font-size: 13px;
+    transition: all 0.4s ease;
+}
