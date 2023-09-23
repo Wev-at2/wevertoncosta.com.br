@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "BebasNeue-Bold";
+  src: url("../fonts/BebasNeue-Bold.eot");
+  src: url("../fonts/BebasNeue-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BebasNeue-Bold.svg#BebasNeue-Bold") format("svg"),
+    url("../fonts/BebasNeue-Bold.ttf") format("truetype"),
+    url("../fonts/BebasNeue-Bold.woff") format("woff"),
+    url("../fonts/BebasNeue-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("../fonts/BebasNeue-Regular.eot");
+  src: url("../fonts/BebasNeue-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BebasNeue-Regular.svg#BebasNeue-Regular") format("svg"),
+    url("../fonts/BebasNeue-Regular.ttf") format("truetype"),
+    url("../fonts/BebasNeue-Regular.woff") format("woff"),
+    url("../fonts/BebasNeue-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DINOT-Bold";
+  src: url("../fonts/DINOT-Bold.eot");
+  src: url("../fonts/DINOT-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/DINOT-Bold.svg#DINOT-Bold") format("svg"),
+    url("../fonts/DINOT-Bold.ttf") format("truetype"),
+    url("../fonts/DINOT-Bold.woff") format("woff"),
+    url("../fonts/DINOT-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monument Extended";
+  src: url("../fonts/MonumentExtended-Regular.otf");
+  src: url("../fonts/MonumentExtended-Ultrabold.otf")
+    format("embedded-opentype");
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* @keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */
+@keyframes bg {
+  0% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+
+  25% {
+    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
+  }
+
+  50% {
+    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
+  }
+
+  75% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
+  }
+
+  100% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  }
+}
+.typewriter:after {
+  content: "|";
+  margin-left: 8px;
+  opacity: 1;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.wc-body {
+  background-color: var(--main-bg-color);
+}
