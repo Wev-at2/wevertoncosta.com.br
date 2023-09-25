@@ -31,6 +31,10 @@
     --font-weight-bold:         700;
     --font-weight-extrabold:    900;
     
+    --line-height-small:        1;
+    --line-height-medium:       1.5;
+    --line-height-big:          2;
+    
     --transition: all 0.4s ease;    
 }
 element {
@@ -57,6 +61,8 @@ element {
     font-weight: var(--font-weight-regular);
     font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-extrabold);
+
+    line-height: var(--line-height-small);
 
     transition: var(--transition);
 }
