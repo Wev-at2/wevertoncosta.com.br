@@ -35,10 +35,12 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Monument Extended";
+  font-family: "Monument Extended Regular";
   src: url("../fonts/MonumentExtended-Regular.otf");
-  src: url("../fonts/MonumentExtended-Ultrabold.otf")
-    format("embedded-opentype");
+}
+@font-face {
+  font-family: "Monument Extended Ultrabold";
+  src: url("../fonts/MonumentExtended-Ultrabold.otf");
 }
 @keyframes typing {
   from {
