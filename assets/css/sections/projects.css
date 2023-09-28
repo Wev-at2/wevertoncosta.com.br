@@ -1,9 +1,44 @@
 .wc-projects__items {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.wc-projects__item {
+  flex: 1 0 33%;
+  max-width: 25%;
+  padding: 2rem;
+  border-radius: 10px;
+  background: #ffffff0f;
 }
 .wc-projects__item a {
   color: var(--main-font-color-two);
   text-decoration: none;
+}
+.wc-projects__item h3 {
+  font-family: var(--font-family-one);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-lighter);
+  padding: 1rem 0;
+}
+.wc-projects__item p {
+  font-size: var(--font-size-small);
+}
+.wc-projects__item--skills_item {
+  font-size: var(--font-size-small);
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .3rem;
+}
+.wc-projects__item--skills_item::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--main-font-color-one);
+  /* list-style: disc; */
 }
