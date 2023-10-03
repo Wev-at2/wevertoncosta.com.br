@@ -9,7 +9,7 @@
 .wc-header__menu--nav_item a {
   color: var(--main-font-color-two);
   font-family: var(--font-family-one);
-  font-size: var(--font-size-medium);
+  font-size: var(--font-size-small);
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.5rem;

@@ -3,10 +3,13 @@
     
     --color-golden:             goldenrod;
     --color-black:              #000;
-    --color-black-transparency: #000000b3;
     --color-white:              #fff;
-    --color-white-transparency: #ffffffb3;
+    --color-blue:               rgb(5, 25, 51);
 
+    --color-black-transparency: #000000b3;
+    --color-white-transparency: #ffffffb3;
+    --color-linear-gradient: linear-gradient(0deg, rgba(5, 25, 51, 1) 0%, rgba(9, 51, 102, 1) 50%);
+    
     --main-bg-color:        var(--color-black);
     --main-font-color-one:  var(--color-golden);
     --main-font-color-two:  var(--color-white);

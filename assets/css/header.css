@@ -8,12 +8,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
-  background: rgb(5, 25, 51);
-  background: linear-gradient(
-    0deg,
-    rgba(5, 25, 51, 1) 0%,
-    rgba(9, 51, 102, 1) 50%
-  );
+  background: var(--color-blue);
+  background: var(--color-linear-gradient);
   position: fixed;
   top: 0;
   left: 0;

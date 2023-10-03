@@ -6,8 +6,81 @@
   align-items: flex-start;
   gap: 1rem;
 }
+.wc-projects__items .slick-prev,
+.wc-projects__items .slick-next {
+  position: absolute;
+  top: 40%;
+  z-index: 4;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 0;
+}
+.wc-projects__items .slick-prev {
+  left: -2.5rem;
+}
+.wc-projects__items .slick-next {
+  right: -2.5rem;
+}
+.wc-projects__items .slick-prev::after {
+  content: "◁ ";
+}
+.wc-projects__items .slick-next::after {
+  content: "▷";
+}
+.wc-projects__items .slick-prev::after,
+.wc-projects__items .slick-next::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  text-align: center;
+  font-family: var(--font-family-one);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white-transparency);
+  background: var(--color-linear-gradient);
+  cursor: pointer;
+}
+.wc-projects__items .slick-dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+}
+.wc-projects__items .slick-dots button {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 0;
+  padding: 0;
+}
+.wc-projects__items .slick-dots button::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: .8rem;
+  height: .8rem;
+  border: 2px solid var(--color-white);;
+  border-radius: 50%;
+  text-align: center;
+  font-family: var(--font-family-one);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white-transparency);
+  background: var(--color-white-transparency);
+  cursor: pointer;
+}
+.wc-projects__items .slick-dots .slick-active button::after {
+  background: var(--color-linear-gradient);
+  border-color: var(--color-white-transparency);
+}
 .wc-projects__items .slick-track {
-  padding: 2rem 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 .wc-projects__item:hover,
 .wc-projects__item:focus {
@@ -17,11 +90,13 @@
 .wc-projects__item {
   border: 2px solid transparent;
   max-width: 25%;
+  min-height: 25rem;
+  max-height: 28.5rem;
   padding: 2rem;
   border-radius: 10px;
   background: #ffffff0f;
   transition: var(--transition);
-  margin: 2rem;
+  margin: 0 2rem;
   margin-left: 0;
 }
 .wc-projects__item a {
@@ -35,8 +110,9 @@
   transform: scale(1.05);
 }
 .wc-projects__item h3 {
+  color: var(--main-font-color-one);
   font-family: var(--font-family-one);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-lighter);
   padding: 1rem 0;
 }
