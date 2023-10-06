@@ -1,11 +1,23 @@
 #wc-contact {
     margin: 2rem auto;
+    margin: 0;
+    padding: 7rem 10% 7rem;
+    background: var(--color-linear-gradient-3);
 }
 .wc-contact__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+    background: var(--color-white-transparency-2);
+    padding: 2rem;
+    border-radius: 10px;
+    /* box-shadow: 1px 1px 20px -2px var(--color-white-transparency-2); */
+}
+.wc-contact__form p {
+    display: block;
+    width: 100%;
+    margin: 0;
 }
 .wc-contact__form > div {
     display: flex;
@@ -16,9 +28,10 @@
 .wc-contact__form > div label {
     font-family: var(--font-family-one);
 }
-.wc-contact__form > div input {
+.wc-contact__form > div input, .wc-contact__form > div textarea {
     padding: .5rem;
     font-size: var(--font-size-base);
+    outline: none;
     /* background: transparent; */
     /* color: var(--main-font-color-two); */
 }
@@ -37,7 +50,14 @@
 .wc-contact__submit {
     width: 100%;
 }
-.wc-contact__submit input {
-    font-family: var(--font-family-one);
+.wc-contact__form .wc-contact__submit input {
     text-transform: uppercase;
+    font-family: var(--font-family-one);
+    color: var(--color-black);
+    background: var(--main-font-color-two);
+}
+@media only screen and (max-width: 767px) {
+    .wc-contact__form {
+        padding: 1rem;
+    }
 }

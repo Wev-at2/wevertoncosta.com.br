@@ -1,3 +1,8 @@
+.wc-about {
+  margin: 0;
+  padding: 7rem 10% 7rem;
+  background: var(--color-linear-gradient-2);
+}
 .wc-about__description strong,
 .wc-about__description a {
   font-weight: 700;

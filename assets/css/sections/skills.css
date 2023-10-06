@@ -20,3 +20,20 @@
   margin-top: 1rem;
   text-align: center;
 }
+@media only screen and (max-width: 767px) {
+  .wc-skills__items {
+    gap: 1rem;
+  }
+  .wc-skills__item {
+    flex: 1 0 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wc-skills__item svg {
+    width: 30%;
+  }
+  .wc-skills__item p {
+    font-size: var(--font-size-base);
+  }
+}

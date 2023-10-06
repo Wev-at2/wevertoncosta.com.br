@@ -22,6 +22,10 @@
   font-weight: var(--font-weight-lighter);
   color: var(--main-font-color-one);
 }
+.wc-experience__item h4 span {
+  font-family: var(--font-family-two);
+  font-size: var(--font-size-smaller);
+}
 .wc-experience__item ul {
   display: flex;
   flex-direction: column;

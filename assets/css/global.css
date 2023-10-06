@@ -50,11 +50,6 @@
     width: 100%;
   }
 }
-/* @keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-} */
 @keyframes bg {
   0% {
     background-size: 0 3px, 3px 0, 0 3px, 3px 0;

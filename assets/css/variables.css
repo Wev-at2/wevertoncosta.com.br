@@ -1,19 +1,24 @@
 :root {
-    /* //// COLORS //// */
-    
-    --color-golden:             goldenrod;
-    --color-black:              #000;
-    --color-white:              #fff;
-    --color-blue:               rgb(5, 25, 51);
+    /* //// COLORS //// */    
+    --color-golden:                 goldenrod;
+    --color-black:                  #000;
+    --color-white:                  #fff;
+    --color-blue:                   rgb(5, 25, 51);
+    --color-purple:                 #340d4c;
 
-    --color-black-transparency: #000000b3;
-    --color-white-transparency: #ffffffb3;
-    --color-linear-gradient: linear-gradient(0deg, rgba(5, 25, 51, 1) 0%, rgba(9, 51, 102, 1) 50%);
+    --color-black-transparency:     #000000b3;
+    --color-white-transparency:     #ffffffb3;
+    --color-white-transparency-2:   #ffffff0f;
+    --color-linear-gradient:        linear-gradient(0deg, rgba(5, 25, 51, 1) 0%, rgba(9, 51, 102, 1) 50%);
+    --color-linear-gradient-2:      linear-gradient(0deg, var(--color-black) 0%, var(--color-blue) 50%, var(--color-black) 100%);
+    --color-linear-gradient-3:      linear-gradient(0deg, var(--color-black) 20%, var(--color-purple) 50%, var(--color-black) 80%);
     
     --main-bg-color:        var(--color-black);
     --main-font-color-one:  var(--color-golden);
     --main-font-color-two:  var(--color-white);
-
+    
+    /* //// FONTS //// */    
+    --font-family-one-bold: "Monument Extended Ultrabold", sans-serif;
     --font-family-one: "Monument Extended Regular", sans-serif;
     --font-family-two: 'Fira Code', sans-serif;
     --font-family-three: 'Open Sans', sans-serif;
@@ -38,6 +43,7 @@
     --line-height-medium:       1.5;
     --line-height-big:          2;
     
+    /* //// TRANSITIONS //// */    
     --transition: all 0.4s ease;    
 }
 element {
@@ -66,6 +72,8 @@ element {
     font-weight: var(--font-weight-extrabold);
 
     line-height: var(--line-height-small);
+    line-height: var(--line-height-medium);
+    line-height: var(--line-height-big);
 
     transition: var(--transition);
 }
