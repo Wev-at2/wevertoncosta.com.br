@@ -14,7 +14,7 @@
 }
 .wc-header__logo--title {
   transition: all 0.4s ease;
-  font-family: var(--font-family-one);
+  font-family: var(--font-family-title);
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-lighter);
 }

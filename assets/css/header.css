@@ -2,14 +2,14 @@
 @import url(./header/menu.css);
 
 .wc-header {
-  font-family: var(--font-family-one);
+  font-family: var(--font-family-title);
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10%;
   background: var(--color-blue);
-  background: var(--color-linear-gradient);
+  background: var(--color-linear-gradient-1);
   position: fixed;
   top: 0;
   left: 0;

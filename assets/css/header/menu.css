@@ -7,10 +7,10 @@
   gap: 0.5rem;
 }
 .wc-header__menu--nav_item a {
-  color: var(--main-font-color-two);
-  font-family: var(--font-family-one);
+  color: var(--secondary-color);
+  font-family: var(--font-family-title);
   font-size: var(--font-size-small);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
   padding: 0.5rem;
   outline: none;

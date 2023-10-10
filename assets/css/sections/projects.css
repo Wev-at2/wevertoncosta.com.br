@@ -38,11 +38,11 @@
   padding: 0.05rem;
   border-radius: 50%;
   text-align: center;
-  font-family: var(--font-family-one-bold);
+  font-family: var(--font-family-title-ultrabold);
   font-size: var(--font-size-big);
   font-weight: var(--font-weight-bold);
   color: var(--color-white-transparency);
-  background: var(--color-linear-gradient);
+  background: var(--color-linear-gradient-1);
   cursor: pointer;
 }
 .wc-projects__items .slick-dots {
@@ -68,7 +68,7 @@
   border: 2px solid var(--color-white);
   border-radius: 50%;
   text-align: center;
-  font-family: var(--font-family-one);
+  font-family: var(--font-family-title);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-bold);
   color: var(--color-white-transparency);
@@ -76,7 +76,7 @@
   cursor: pointer;
 }
 .wc-projects__items .slick-dots .slick-active button::after {
-  background: var(--color-linear-gradient);
+  background: var(--color-linear-gradient-1);
   border-color: var(--color-white-transparency);
 }
 .wc-projects__items .slick-track {
@@ -117,29 +117,28 @@
 }
 .wc-projects__item a {
   text-decoration: none;
+  font-family: var(--font-family-other-1);
   font-size: var(--font-size-small);
   padding: 0.3rem 0.8rem;
   border-radius: 0.5rem;
   text-align: center;
   transition: var(--transition);
-  border: 1px solid var(--main-font-color-one);
-  color: var(--main-font-color-one);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   background: transparent;
 }
 .wc-projects__item a:hover {
   color: var(--color-black);
-  background: var(--main-font-color-one);
+  background: var(--primary-color);
+  transform: scale(1.05);
+  transition: var(--transition);
 }
 .wc-projects__item a:not(:last-child) {
   margin: 0.5rem 0;
 }
-.wc-projects__item a:hover {
-  transform: scale(1.05);
-  transition: var(--transition);
-}
 .wc-projects__item h3 {
-  color: var(--main-font-color-one);
-  font-family: var(--font-family-one);
+  color: var(--primary-color);
+  font-family: var(--font-family-title);
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-lighter);
   padding: 1rem 0;
@@ -161,12 +160,11 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--main-font-color-one);
+  background: var(--primary-color);
   /* list-style: disc; */
 }
 @media only screen and (max-width: 767px) {
   .wc-projects__item {
     padding: 1rem;
   }
-
 }

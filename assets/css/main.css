@@ -44,8 +44,8 @@
 }
 .wc-main__banner--content_title,
 .wc-main__banner--content_description {
-  font-family: var(--font-family-two);
-  color: var(--main-font-color-two);
+  font-family: var(--font-family-base);
+  color: var(--secondary-color);
 }
 .wc-main__banner--content_title {
   font-size: var(--font-size-giant);
@@ -57,8 +57,8 @@
   text-align: left;
 }
 .wc-main__banner--content_link {
-  font-family: var(--font-family-one);
-  color: var(--main-font-color-two);
+  font-family: var(--font-family-title);
+  color: var(--secondary-color);
   width: max-content;
   margin-top: 2rem;
   padding: 12px;
