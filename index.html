@@ -44,7 +44,19 @@
     <main class="wc-main">
         <section id="wc-main-home" class="wc-main__banner">
             <div class="wc-main__banner--container">
-                <img class="wc-main__banner--img" src="./assets/img/wc.mainHome-BG-2-1.jpg" alt="" style="display: block; max-width: 100%; height: auto;">
+                <picture>
+                    <!-- Imagem para dispositivos desktop com largura mínima de 769px -->
+                    <!-- <source media="(min-width: 769px)" srcset="./assets/img/wc.mainHome-BG-2-1.jpg"> -->
+                    <source media="(min-width: 769px)" srcset="http://127.0.0.1:3000/assets/img/wc.mainHome-BG-2-1.jpg">
+
+                    <!-- Imagem para dispositivos mobile com largura máxima de 768px -->
+                    <!-- <source media="(max-width: 768px)" srcset="./assets/img/wc.mainHome-BG-9-16.jpg"> -->
+                    <source media="(max-width: 768px)" srcset="http://127.0.0.1:3000/assets/img/wc.mainHome-BG-9-16.jpg">
+
+                    <!-- Imagem padrão para navegadores que não suportam a tag picture -->
+                    <img class="wc-main__banner--img" src="./assets/img/wc.mainHome-BG-2-1.jpg" alt="" style="display: block; max-width: 100%; height: auto;">
+                </picture>
+                <!-- <img class="wc-main__banner--img" src="./assets/img/wc.mainHome-BG-2-1.jpg" alt="" style="display: block; max-width: 100%; height: auto;"> -->
                 <div class="wc-main__banner--content">
                     <div class="wc-main__banner--content_text">
                         <h1 class="wc-main__banner--content_title">Hello World</h1>
@@ -233,6 +245,24 @@
                     </li>
                     <li class="wc-projects__item">
                         <div class="wc-projects__item--content">
+                            <img src="./assets/img/wc-projects_lojabepop.jpg" alt="Bepop" title="Hausport" style="display: block; max-width: 100%; height: auto;">
+                            <h3>Bepop</h3>
+                            <p>Projeto da The Alfred. Site e-commerce desenvolvido através da plataforma Vnda by Olist.</p>
+                            <p></p>
+                            <ul class="wc-projects__item--skills">
+                                <li class="wc-projects__item--skills_item">LIQUID</li>
+                                <li class="wc-projects__item--skills_item">SCSS / SASS</li>
+                                <li class="wc-projects__item--skills_item">JAVASCRIPT</li>
+                            </ul>
+                        </div>
+                        <div class="wc-projects__item--links">
+                            <a href="https://www.hausport.com.br" target="_blank">
+                                Visitar site
+                            </a>
+                        </div>
+                    </li>
+                    <li class="wc-projects__item">
+                        <div class="wc-projects__item--content">
                             <img src="./assets/img/wc-projects_kerastase.jpg" alt="Portifólio" title="Portifólio" style="display: block; max-width: 100%; height: auto;">
                             <h3>Formulário Blond Action <br> Kérastase Paris</h3>
                             <p>Projeto da The Alfred. Formulário para um linha específica da marca Kérastase Paris.</p>
@@ -271,7 +301,7 @@
                         <div class="wc-projects__item--content">
                             <img src="./assets/img/wc-projects_flexblog.jpg" alt="Portifólio" title="Portifólio" style="display: block; max-width: 100%; height: auto;">
                             <h3>FlexBlog</h3>
-                            <p>Exercício final do curso CSS FLEXBOX da Origamid: FlexBlog</p>
+                            <p>Exercício final do curso CSS FLEXBOX da Origamid</p>
                             <p></p>
                             <ul class="wc-projects__item--skills">
                                 <li class="wc-projects__item--skills_item">HTML</li>
@@ -295,11 +325,19 @@
                     <p>Entre em contato comigo</p>
                     <div class="wc-contact__name">
                         <label for="wc-contact__name">Nome</label>
-                        <input type="text" name="name" required id="wc-contact__name">
+                        <input type="text" name="name" required id="wc-contact__name" placeholder="digite seu primeiro nome">
                     </div>
+                    <!-- <div class="wc-contact__lastname">
+                        <label for="wc-contact__lastname">Sobrenome</label>
+                        <input type="text" name="lastname" required id="wc-contact__lastname" placeholder="digite seu sobrenome">
+                    </div> -->
                     <div class="wc-contact__email">
                         <label for="wc-contact__email">E-mail</label>
-                        <input type="email" name="email" required id="wc-contact__email">
+                        <input type="email" name="email" required id="wc-contact__email" placeholder="digite seu e-mail">
+                    </div>
+                    <div class="wc-contact__phone">
+                        <label for="wc-contact__phone">Celular</label>
+                        <input type="tel" name="phone" required id="wc-contact__phone" placeholder="digite seu celular">
                     </div>
                     <div class="wc-contact__message">
                         <label for="wc-contact__message">Mensagem</label>
