@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".wc-projects__items").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 6000,
     dots: true,
     infinite: true,
