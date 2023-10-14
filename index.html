@@ -329,32 +329,13 @@
         <section id="wc-contact" class="wc-contact">
             <div>
                 <h2>Contato</h2>
-                <form action="post" class="wc-contact__form">
-                    <p>Entre em contato comigo</p>
-                    <div class="wc-contact__name">
-                        <label for="wc-contact__name">Nome</label>
-                        <input type="text" name="name" required id="wc-contact__name" placeholder="digite seu primeiro nome">
+                <div class="wc-contact__container">
+                    <p class="wc-contact__text">Entre em contato comigo</p>
+                    <div class="wc-contact__flex">
+                        <a class="wc-contact__link" href="mailto:weverton.costa2022@gmail.com?subject=Networking%20e%20Possiveis%20Oportunidades" target="_blank">Através do e-mail</a>
+                        <a class="wc-contact__link" href="https://wa.me/5511981304510?text=Olá%20Weverton,%20tudo%20bem?%20Vim%20aqui%20através%20do%20seu%20site%20portfólio." target="_blank">Através do WhatsApp</a>
                     </div>
-                    <!-- <div class="wc-contact__lastname">
-                        <label for="wc-contact__lastname">Sobrenome</label>
-                        <input type="text" name="lastname" required id="wc-contact__lastname" placeholder="digite seu sobrenome">
-                    </div> -->
-                    <div class="wc-contact__email">
-                        <label for="wc-contact__email">E-mail</label>
-                        <input type="email" name="email" required id="wc-contact__email" placeholder="digite seu e-mail">
-                    </div>
-                    <div class="wc-contact__phone">
-                        <label for="wc-contact__phone">Celular</label>
-                        <input type="tel" name="phone" required id="wc-contact__phone" placeholder="digite seu celular" maxlength="14">
-                    </div>
-                    <div class="wc-contact__message">
-                        <label for="wc-contact__message">Mensagem</label>
-                        <textarea name="message" id="wc-contact__message" rows="5" placeholder="Mensagem sobre o motivo do contato..."></textarea>
-                    </div>
-                    <div class="wc-contact__submit">
-                        <input type="submit" value="Enviar">
-                    </div>
-                </form>
+                </div>
             </div>
         </section>
     </main>
