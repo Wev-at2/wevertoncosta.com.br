@@ -57,8 +57,40 @@
   color: var(--color-black);
   background: var(--secondary-color);
 }
+.wc-contact__text {
+  padding-bottom: 2rem;
+}
+.wc-contact__flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.wc-contact__link {
+  font-family: var(--font-family-title);
+  color: var(--secondary-color);
+  border: 3px solid #fff;
+  padding: 1rem 2rem;
+  transition: var(--transition);
+}
+.wc-contact__link:hover {
+  background: var(--secondary-color);
+  color: var(--color-black);
+}
 @media only screen and (max-width: 767px) {
   .wc-contact__form {
     padding: 1rem;
+  }
+  .wc-contact__text {
+    padding: 0 0 1rem;
+    margin: 0;
+  }
+.wc-contact__flex {
+  flex-direction: column;
+  justify-content: center;
+}
+  .wc-contact__link {
+    padding: 1rem;
+    text-align: center;
   }
 }
