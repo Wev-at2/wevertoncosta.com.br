@@ -57,9 +57,9 @@
   color: var(--color-black);
   background: var(--secondary-color);
 }
-.wc-contact__text {
+/* .wc-contact__text {
   padding-bottom: 2rem;
-}
+} */
 .wc-contact__flex {
   display: flex;
   flex-direction: row;
@@ -85,10 +85,10 @@
     padding: 0 0 1rem;
     margin: 0;
   }
-.wc-contact__flex {
-  flex-direction: column;
-  justify-content: center;
-}
+  .wc-contact__flex {
+    flex-direction: column;
+    justify-content: center;
+  }
   .wc-contact__link {
     padding: 1rem;
     text-align: center;
