@@ -62,6 +62,7 @@
   width: max-content;
   margin-top: 2rem;
   padding: 12px;
+  box-sizing: border-box;
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, #fff 100%, #fff 100%),
     linear-gradient(to bottom, #fff 100%, #fff 100%),
