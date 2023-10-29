@@ -108,6 +108,10 @@
 .wc-projects__item img {
   transition: var(--transition);
 }
+.wc-projects__item a {
+  color: #ffffff;
+  text-decoration: underline;
+}
 .wc-projects__item--links {
   display: flex;
   justify-content: center;
@@ -115,7 +119,7 @@
   gap: 0.8rem;
   margin-top: 10%;
 }
-.wc-projects__item a {
+.wc-projects__item--links a {
   text-decoration: none;
   font-family: var(--font-family-other-1);
   font-size: var(--font-size-small);
@@ -127,13 +131,13 @@
   color: var(--primary-color);
   background: transparent;
 }
-.wc-projects__item a:hover {
+.wc-projects__item--links a:hover {
   color: var(--color-black);
   background: var(--primary-color);
   transform: scale(1.05);
   transition: var(--transition);
 }
-.wc-projects__item a:not(:last-child) {
+.wc-projects__item--links a:not(:last-child) {
   margin: 0.5rem 0;
 }
 .wc-projects__item h3 {
