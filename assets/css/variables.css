@@ -27,10 +27,11 @@
   --line-height-big: 2;
 
   /* //// COLORS //// */
-  --color-golden: goldenrod;
+  --color-golden: #daa520;
   --color-black: #000;
   --color-white: #fff;
-  --color-blue: rgb(5, 25, 51);
+  --color-blue-1: #093366;
+  --color-blue-2: #051933;
   --color-purple: #340d4c;
   --color-red: #ff0000;
 
