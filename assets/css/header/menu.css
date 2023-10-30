@@ -78,7 +78,8 @@
   }
   .wc-header__menu--nav #btn-mobile {
     display: flex;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
+    padding: 0;
     font-size: 0;
     outline: none;
     border: none;

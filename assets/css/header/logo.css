@@ -1,5 +1,6 @@
 .wc-header__logo {
   position: relative;
+  width: 9ch;
 }
 .wc-header__logo--link {
   color: transparent;
@@ -8,18 +9,18 @@
   text-decoration: none;
   transition: all 0.4s ease;
 }
-.wc-header__logo--link:is(:hover, :focus) .wc-header__logo--title {
+.wc-header__logo--link:is(:hover, :focus) h1 {
   transform: scale(1.1);
   transition: all 0.4s ease;
 }
-.wc-header__logo--title {
+.wc-header__logo--link h1 {
   transition: all 0.4s ease;
   font-family: var(--font-family-title);
-  font-size: var(--font-size-title);
+  font-size: var(--font-size-bigx);
   font-weight: var(--font-weight-lighter);
 }
 @media only screen and (max-width: 767px) {
-  .wc-header__logo--title {
+  .wc-header__logo--link h1 {
     font-size: var(--font-size-big);
   }
 }
