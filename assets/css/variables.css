@@ -46,8 +46,8 @@
 
   --color-linear-gradient-1: linear-gradient(
     0deg,
-    rgba(5, 25, 51, 1) 0%,
-    rgba(9, 51, 102, 1) 50%
+    var(--color-blue-2) 0%,
+    var(--color-blue-1) 50%
   );
   --color-linear-gradient-2: linear-gradient(
     0deg,

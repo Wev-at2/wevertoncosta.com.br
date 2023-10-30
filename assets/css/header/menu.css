@@ -69,12 +69,20 @@
   }
   .wc-header__menu--nav_item {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0;
     box-sizing: border-box;
+    text-align: center;
   }
   .wc-header__menu--nav_item a {
-    padding: 1rem 0;
-    margin: 0 1rem;
+    padding: 1rem 1rem;
+    display: block;
+    font-size: var(--font-size-base);
+  }
+  .wc-header__menu--nav_item a::after {
+    left: 30%;
+  }
+  .wc-header__menu--nav_item a:is(:hover, :focus)::after {
+    width: 40%;
   }
   .wc-header__menu--nav #btn-mobile {
     display: flex;

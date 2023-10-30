@@ -2,10 +2,10 @@ $(document).ready(function () {
   $(".wc-projects__items").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 6000,
+    autoplay: true,
+    autoplaySpeed: 9000,
     dots: true,
-    infinite: false,
+    infinite: true,
     centerMode: false,
     speed: 300,
     responsive: [
