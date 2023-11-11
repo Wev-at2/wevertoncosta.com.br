@@ -1,26 +1,42 @@
 .wc-header__logo {
   position: relative;
-  width: 9ch;
 }
 .wc-header__logo--link {
-  color: transparent;
+  /* color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-stroke-color: #ffffff; */
+  color: #fff;
   text-decoration: none;
   transition: all 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
 }
-.wc-header__logo--link:is(:hover, :focus) h1 {
+.wc-header__logo--link:is(:hover, :focus) {
   transform: scale(1.1);
   transition: all 0.4s ease;
 }
 .wc-header__logo--link h1 {
   transition: all 0.4s ease;
   font-family: var(--font-family-title);
-  font-size: var(--font-size-bigx);
+  font-size: var(--font-size-subtitle);
   font-weight: var(--font-weight-lighter);
+  width: 9ch;
+  /* font-family: "Glacial Indifference", sans-serif; */
+  position: relative;
 }
+.wc-header__logo--link h1::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  left: -0.5rem;
+  background: #fff;
+}
+
 @media only screen and (max-width: 767px) {
   .wc-header__logo--link h1 {
-    font-size: var(--font-size-big);
+    font-size: var(--font-size-regular);
   }
 }
