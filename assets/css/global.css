@@ -42,6 +42,19 @@
   font-family: "Monument Extended Ultrabold";
   src: url("../fonts/MonumentExtended-Ultrabold.otf");
 }
+/*
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+
+font-family: 'Glacial Indifference', sans-serif;
+*/
+@font-face {
+  font-family: "Glacial Indifference", sans-serif;
+  src: url("../fonts/GlacialIndifference-Regular.otf");
+}
+@font-face {
+  font-family: "Glacial Indifference Bold", sans-serif;
+  src: url("../fonts/GlacialIndifference-Bold.otf");
+}
 @keyframes typing {
   from {
     width: 0;
