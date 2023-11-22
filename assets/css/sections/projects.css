@@ -165,7 +165,6 @@
   height: 5px;
   border-radius: 50%;
   background: var(--primary-color);
-  /* list-style: disc; */
 }
 @media only screen and (max-width: 767px) {
   .wc-projects__item {

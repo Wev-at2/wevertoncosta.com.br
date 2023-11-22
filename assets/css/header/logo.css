@@ -22,7 +22,6 @@
   font-size: var(--font-size-subtitle);
   font-weight: var(--font-weight-lighter);
   width: 9ch;
-  /* font-family: "Glacial Indifference", sans-serif; */
   position: relative;
 }
 .wc-header__logo--link h1::before {

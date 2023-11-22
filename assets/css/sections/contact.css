@@ -33,8 +33,6 @@
   font-family: var(--font-family-base);
   font-size: var(--font-size-base);
   outline: none;
-  /* background: transparent; */
-  /* color: var(--secondary-color); */
 }
 .wc-contact__form > div textarea {
   padding: 0.5rem;
@@ -57,9 +55,6 @@
   color: var(--color-black);
   background: var(--secondary-color);
 }
-/* .wc-contact__text {
-  padding-bottom: 2rem;
-} */
 .wc-contact__flex {
   display: flex;
   flex-direction: row;

@@ -22,7 +22,6 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   gap: 1rem;
   text-align: left;
@@ -114,7 +113,6 @@
     font-size: var(--font-size-title);
   }
   .wc-main__banner--content_description {
-    /* top: 4.5rem; */
     font-size: var(--font-size-base);
     min-height: 3rem;
   }
