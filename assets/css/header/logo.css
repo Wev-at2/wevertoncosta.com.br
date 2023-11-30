@@ -9,7 +9,7 @@
   text-decoration: none;
   transition: all 0.4s ease;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 1rem;
 }
 .wc-header__logo--link:is(:hover, :focus) {
@@ -27,13 +27,13 @@
 .wc-header__logo--link h1::before {
   content: "";
   display: inline-block;
-  height: 100%;
+  height: 150%;
   width: 1px;
   position: absolute;
+  top: -0.5rem;
   left: -0.5rem;
   background: #fff;
 }
-
 @media only screen and (max-width: 767px) {
   .wc-header__logo--link h1 {
     font-size: var(--font-size-regular);
