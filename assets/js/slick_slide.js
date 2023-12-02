@@ -31,6 +31,22 @@ $(document).ready(function () {
     ],
   });
 
-  $(".slick-prev").attr("aria-label", "Anterior");
-  $(".slick-next").attr("aria-label", "Próximo");
+  $(".slick-prev").attr({
+    "aria-label": "Anterior",
+    role: "button",
+  });
+
+  $(".slick-next").attr({
+    "aria-label": "Próximo",
+    role: "button",
+  });
+
+  $(".slick-dots").attr("role", "list");
+
+  $(".slick-dots li").attr({
+    role: "presentation",
+    "aria-hidden": "false",
+    "aria-selected": "true",
+    tabindex: "0",
+  });
 });
