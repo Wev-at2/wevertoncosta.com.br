@@ -1,12 +1,11 @@
 $(document).ready(function () {
+  // Inicialize o carrossel Slick
   $(".wc-projects__items").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
     infinite: true,
     speed: 300,
-    // autoplay: true,
-    // autoplaySpeed: 9000,
     responsive: [
       {
         breakpoint: 1024,
@@ -31,4 +30,7 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $(".slick-prev").attr("aria-label", "Anterior");
+  $(".slick-next").attr("aria-label", "Próximo");
 });
