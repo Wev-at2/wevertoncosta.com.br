@@ -41,12 +41,7 @@ $(document).ready(function () {
     role: "button",
   });
 
-  $(".slick-dots").attr("role", "list");
-
   $(".slick-dots li").attr({
-    role: "presentation",
-    "aria-hidden": "false",
-    "aria-selected": "true",
-    tabindex: "0",
+    "aria-hidden": "true",
   });
 });
