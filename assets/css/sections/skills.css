@@ -15,7 +15,7 @@
 .wc-skills__item:hover {
   transform: scale(1.1);
   transition: var(--transition);
-  filter: drop-shadow(4px 6px 2px var(--color-purple));
+  filter: drop-shadow(4px 6px 2px var(--color-gray-4));
 }
 .wc-skills__item svg {
   width: 100%;
