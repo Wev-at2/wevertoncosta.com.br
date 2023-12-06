@@ -153,6 +153,14 @@
 .wc-projects__item p {
   font-size: var(--font-size-small);
 }
+.wc-projects__item--skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .8rem;
+}
 .wc-projects__item--skills_item {
   font-size: var(--font-size-small);
   display: flex;
@@ -160,13 +168,8 @@
   gap: 0.6rem;
   margin-bottom: 0.3rem;
 }
-.wc-projects__item--skills_item::before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--primary-color);
+.wc-projects__item--skills_item svg use {
+  fill: var(--primary-color);
 }
 @media only screen and (max-width: 767px) {
   .wc-projects__item {
