@@ -54,13 +54,13 @@
   --color-linear-gradient-2: linear-gradient(
     0deg,
     var(--color-black) 0%,
-    var(--color-blue) 50%,
+    var(--color-blue-1) 50%,
     var(--color-black) 100%
   );
   --color-linear-gradient-3: linear-gradient(
     0deg,
-    var(--color-black) 20%,
-    var(--color-purple) 50%,
+    var(--color-black) 0%,
+    var(--color-purple) 40%,
     var(--color-black) 80%
   );
 
