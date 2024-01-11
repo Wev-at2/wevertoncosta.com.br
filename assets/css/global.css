@@ -94,6 +94,17 @@
     opacity: 0;
   }
 }
+body {
+  cursor: url("/assets/svg/wcursor.svg") 5 0, auto;
+}
+a:hover {
+  cursor: url("/assets/svg/wcursor.svg") 5 0, auto;
+}
+button:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover {
+  cursor: url("/assets/svg/wcursor.svg") 5 0, auto;
+}
 .wc-body {
   background-color: var(--main-bg-color);
 }
