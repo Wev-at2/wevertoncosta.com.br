@@ -34,6 +34,55 @@
   left: -0.5rem;
   background: #fff;
 }
+.wc-header__logo--link path {
+  fill: #fff;
+  fill-opacity: 1;
+  stroke-dasharray: 12860 12862;
+  stroke-dashoffset: 12861;
+  animation: wc_logo 4000ms ease-in 0ms reverse;
+}
+.wc-header__logo--link:hover path {
+  /* fill: none; */
+  fill: #fff;
+  stroke-dasharray: 12860 12862;
+  stroke-dashoffset: 12861;
+  animation: wc_logo_hover 2000ms ease-in 0ms forwards;
+}
+@keyframes wc_logo {
+  0% {
+    fill-opacity: 1;
+  }
+  10% {
+    fill-opacity: 0.2;
+  }
+  90% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes wc_logo_hover {
+  0% {
+    fill-opacity: 0;
+  }
+  95% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dsrRBUzm_fade {
+  0% {
+    stroke-opacity: 1;
+  }
+  94.44444444444444% {
+    stroke-opacity: 1;
+  }
+  100% {
+    stroke-opacity: 0;
+  }
+}
 @media only screen and (max-width: 767px) {
   .wc-header__logo--link h1 {
     font-size: var(--font-size-regular);
