@@ -55,36 +55,117 @@
   font-size: var(--font-size-big);
   text-align: left;
 }
-.wc-main__banner--content_link {
-  font-family: var(--font-family-title);
-  color: var(--secondary-color);
-  width: max-content;
-  margin-top: 2rem;
-  padding: 12px;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #fff 100%, #fff 100%),
-    linear-gradient(to bottom, #fff 100%, #fff 100%),
-    linear-gradient(to right, #fff 100%, #fff 100%),
-    linear-gradient(to bottom, #fff 100%, #fff 100%);
-  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  transition: all 0.4s ease;
-  animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
-}
-.wc-main__banner--content_link:hover {
-  transform: scale(1.1);
-  transition: all 0.4s ease;
-  color: #000;
-  background: #fff;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #fff 100%, #fff 100%),
-    linear-gradient(to bottom, #fff 100%, #fff 100%),
-    linear-gradient(to right, #fff 100%, #fff 100%),
-    linear-gradient(to bottom, #fff 100%, #fff 100%);
-  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  animation: bg 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1;
+@media only screen and (min-width: 767px) {
+  .wc-main__banner--content_link {
+    font-family: var(--font-family-title);
+    color: var(--secondary-color);
+    width: max-content;
+    padding: 12px;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    color: white;
+    padding: 0.7em calc(0.7em * 1.2);
+    display: inline-block;
+    border: 3px solid transparent;
+    position: relative;
+    font-size: 1.5em;
+    cursor: pointer;
+    letter-spacing: 0.07em;
+  }
+  .wc-main__banner--content_link .text {
+    transform: translate3d(0, 0.7em, 0);
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  }
+  .wc-main__banner--content_link .text::after {
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    left: calc(0.1em * 1.2);
+    right: calc(0.1em * 1.2);
+    height: 3px;
+    background: var(--color-white);
+    transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
+      right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
+      left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+    transform-origin: left;
+  }
+  .wc-main__banner--content_link .line {
+    position: absolute;
+    background: var(--color-white);
+  }
+  .wc-main__banner--content_link .line.-right,
+  .wc-main__banner--content_link .line.-left {
+    width: 3px;
+    bottom: -3px;
+    top: -3px;
+    transform: scale3d(1, 0, 1);
+  }
+  .wc-main__banner--content_link .line.-top,
+  .wc-main__banner--content_link .line.-bottom {
+    height: 3px;
+    left: -3px;
+    right: -3px;
+    transform: scale3d(0, 1, 1);
+  }
+  .wc-main__banner--content_link .line.-right {
+    right: -3px;
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+    transform-origin: top;
+  }
+  .wc-main__banner--content_link .line.-top {
+    top: -3px;
+    transition: transform 0.08s linear 0.43s;
+    transform-origin: left;
+  }
+  .wc-main__banner--content_link .line.-left {
+    left: -3px;
+    transition: transform 0.08s linear 0.51s;
+    transform-origin: bottom;
+  }
+  .wc-main__banner--content_link .line.-bottom {
+    bottom: -3px;
+    transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+    transform-origin: right;
+  }
+  .wc-main__banner--content_link:hover .text,
+  .wc-main__banner--content_link:active .text {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  }
+  .wc-main__banner--content_link:hover .text::after,
+  .wc-main__banner--content_link:active .text::after {
+    transform: scale3d(0, 1, 1);
+    right: -3px;
+    left: -3px;
+    transform-origin: right;
+    transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s,
+      right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+  }
+  .wc-main__banner--content_link:hover .line,
+  .wc-main__banner--content_link:active .line {
+    transform: scale3d(1, 1, 1);
+  }
+  .wc-main__banner--content_link:hover .line.-right,
+  .wc-main__banner--content_link:active .line.-right {
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+    transform-origin: bottom;
+  }
+  .wc-main__banner--content_link:hover .line.-top,
+  .wc-main__banner--content_link:active .line.-top {
+    transition: transform 0.08s linear 0.4s;
+    transform-origin: right;
+  }
+  .wc-main__banner--content_link:hover .line.-left,
+  .wc-main__banner--content_link:active .line.-left {
+    transition: transform 0.08s linear 0.48s;
+    transform-origin: top;
+  }
+  .wc-main__banner--content_link:hover .line.-bottom,
+  .wc-main__banner--content_link:active .line.-bottom {
+    transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+    transform-origin: left;
+  }
 }
 @media only screen and (max-width: 767px) {
   .wc-main {
@@ -121,5 +202,35 @@
     padding: 12px;
     width: 100%;
     text-align: center;
+  }
+  .wc-main__banner--content_link {
+    font-family: var(--font-family-title);
+    color: var(--secondary-color);
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #fff 100%, #fff 100%),
+      linear-gradient(to bottom, #fff 100%, #fff 100%),
+      linear-gradient(to right, #fff 100%, #fff 100%),
+      linear-gradient(to bottom, #fff 100%, #fff 100%);
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    animation: bg 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  }
+  .wc-main__banner--content_link:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+    color: #000;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #fff 100%, #fff 100%),
+      linear-gradient(to bottom, #fff 100%, #fff 100%),
+      linear-gradient(to right, #fff 100%, #fff 100%),
+      linear-gradient(to bottom, #fff 100%, #fff 100%);
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    animation: bg 1.5s cubic-bezier(0.19, 1, 0.22, 1) 1;
   }
 }
