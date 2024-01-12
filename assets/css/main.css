@@ -1,6 +1,4 @@
-.wc-main {
-  margin-top: 4.5rem;
-}
+/*.wc-main {margin-top: 4.5rem;}*/
 .wc-main__banner {
   background-size: cover;
   max-width: 100%;
@@ -168,9 +166,7 @@
   }
 }
 @media only screen and (max-width: 767px) {
-  .wc-main {
-    margin-top: 4.3rem;
-  }
+  /* .wc-main {margin-top: 4.3rem;} */
   .wc-main__banner {
     height: 90vh;
   }
@@ -178,7 +174,8 @@
     height: 100%;
   }
   .wc-main__banner--content {
-    top: 0;
+    /* padding-top: 4.3rem; */
+    top: 4.3rem;
     padding-top: 2rem;
     max-width: 100%;
     flex-direction: column-reverse;
