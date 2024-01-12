@@ -69,8 +69,8 @@
   transition: var(--transition);
 }
 .wc-contact__link:hover {
-  background: var(--secondary-color);
   color: var(--color-black);
+  box-shadow: var(--boxshadow-slide_right);
 }
 @media only screen and (max-width: 767px) {
   .wc-contact__form {
