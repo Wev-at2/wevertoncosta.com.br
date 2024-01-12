@@ -11,6 +11,7 @@
   border-radius: 10px;
   border: 2px solid transparent;
   transition: var(--transition);
+  position: relative;
 }
 .wc-experience__item:has(details[open]) {
   border: 2px solid var(--color-white-transparency-2);
@@ -18,6 +19,20 @@
 }
 .wc-experience__item details summary {
   padding: 2rem;
+  list-style: none;
+}
+.wc-experience__item details summary::-webkit-details-marker {
+  display: none;
+}
+.wc-experience__item details summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.wc-experience__item details[open] summary:after {
+  content: "-";
 }
 .wc-experience__item details ul {
   padding: 3rem;
