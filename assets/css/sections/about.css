@@ -11,6 +11,24 @@
 .wc-about__description a:hover {
   text-decoration: underline;
 }
+.wc-about__content {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+.wc-about__content::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+.wc-about button#read-button {
+  background: transparent;
+  border: none;
+  font-weight: 700;
+  color: var(--color-golden);
+}
 @media only screen and (min-width: 767px) {
   .wc-about {
     position: relative;
@@ -18,7 +36,7 @@
   .wc-about::before {
     content: "";
     background: url("/assets/img/wc-about-bg2.webp") no-repeat top right;
-    filter: contrast(1.5) brightness(0.5) drop-shadow(2px 4px 6px black);
+    filter: contrast(1.5) brightness(0.5) drop-shadow(5px 10px 5px black);
     opacity: 0.5;
     pointer-events: none;
     position: absolute;
