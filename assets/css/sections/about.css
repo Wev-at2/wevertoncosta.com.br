@@ -8,8 +8,31 @@
   font-weight: 700;
   color: var(--color-golden);
 }
+.wc-about__description a:hover {
+  text-decoration: underline;
+}
+@media only screen and (min-width: 767px) {
+  .wc-about {
+    position: relative;
+  }
+  .wc-about::before {
+    content: "";
+    background: url("/assets/img/wc-about-bg3.webp") no-repeat center left;
+    filter: grayscale(2);
+    opacity: 0.2;
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+  }
+}
 @media only screen and (max-width: 767px) {
+  .wc-about::before {
+    background-position: top;
+  }
   .wc-about__description {
     text-align: justify;
+  }
+  .wc-about__description a {
+    text-decoration: underline;
   }
 }
