@@ -86,8 +86,8 @@
 .wc-projects__item:hover,
 .wc-projects__item:focus {
   transform: scale(1.01);
-  border: 2px solid #ffffff0f;
-  box-shadow: 1px 1px 20px -2px #ffffff0f;
+  border: 2px solid var(--color-white-transparency-2);
+  box-shadow: var(--boxshadow-hover-1);
 }
 .wc-projects__item {
   min-height: 27rem;
@@ -98,7 +98,7 @@
   margin-left: 0;
   border: 2px solid transparent;
   border-radius: 10px;
-  background: #ffffff0f;
+  background: var(--color-white-transparency-2);
   transition: var(--transition);
   display: flex !important;
   flex-direction: column;
@@ -159,7 +159,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: .8rem;
+  gap: 0.8rem;
 }
 .wc-projects__item--skills_item {
   font-size: var(--font-size-small);
@@ -180,6 +180,6 @@
   }
   .wc-projects__item--links a {
     width: 100%;
-    padding: .5rem 0.8rem;
+    padding: 0.5rem 0.8rem;
   }
 }
