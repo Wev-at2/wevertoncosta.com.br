@@ -70,14 +70,23 @@
 
   /* //// TRANSITIONS //// */
   --transition: all 0.4s ease;
+  
+  /* //// BOX-SHADOW //// */
+  --boxshadow-hover-1: 1px 1px 20px -2px var(--color-white-transparency-2);
+  --boxshadow-slide_down: inset 0 100px 0 0 var(--secondary-color);
+  --boxshadow-slide_right: inset 400px 0 0 0 var(--secondary-color);
+  --boxshadow-slide_left: inset 0 0 0 50px var(--secondary-color);
+  --boxshadow-slide_diagonal: inset 400px 50px 0 0 var(--secondary-color);
 }
 element {
+  /* FONT-FAMILY */
   font-family: var(--font-family-title);
   font-family: var(--font-family-title-ultrabold);
   font-family: var(--font-family-base);
   font-family: var(--font-family-other-1);
   font-family: var(--font-family-other-2);
-
+  
+  /* FONT-SIZE */
   font-size: var(--font-size-smaller);
   font-size: var(--font-size-small);
   font-size: var(--font-size-medium);
@@ -87,20 +96,31 @@ element {
   font-size: var(--font-size-bigx);
   font-size: var(--font-size-title);
   font-size: var(--font-size-giant);
-
+  
+  /* FONT-WEIGHT */
   font-weight: var(--font-weight-lighter);
   font-weight: var(--font-weight-light);
   font-weight: var(--font-weight-regular);
   font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-ultrabold);
-
+  
+  /* LINE-HEIGHT */
   line-height: var(--line-height-small);
   line-height: var(--line-height-medium);
   line-height: var(--line-height-big);
-
+  
+  /* COLORS */
   background-color: var(--main-bg-color);
   color: var(--primary-color);
   color: var(--secondary-color);
-
+  
+  /* TRANSIOTIONS */
   transition: var(--transition);
+  
+  /* BOX-SHADOWS */
+  box-shadow: var(--boxshadow-hover-1);
+  box-shadow: var(--boxshadow-slide_down);
+  box-shadow: var(--boxshadow-slide_right);
+  box-shadow: var(--boxshadow-slide_left);
+  box-shadow: var(--boxshadow-slide_diagonal);
 }
