@@ -7,14 +7,28 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding: 2rem;
+  background: var(--color-white-transparency-2);
   border-radius: 10px;
-  background: #ffffff0f;
+  border: 2px solid transparent;
+  transition: var(--transition);
+}
+.wc-experience__item:has(details[open]) {
+  border: 2px solid var(--color-white-transparency-2);
+  box-shadow: var(--boxshadow-hover-1);
+}
+.wc-experience__item details summary {
+  padding: 2rem;
+}
+.wc-experience__item details ul {
+  padding: 3rem;
+  padding-top: 0;
 }
 .wc-experience__item h3 {
+  display: inline-block;
   font-family: var(--font-family-title);
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-lighter);
+  margin-bottom: 0.5rem;
 }
 .wc-experience__item h4 {
   font-family: var(--font-family-title);
