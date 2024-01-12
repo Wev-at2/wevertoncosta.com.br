@@ -18,7 +18,7 @@
   .wc-about::before {
     content: "";
     background: url("/assets/img/wc-about-bg2.webp") no-repeat top right;
-    filter: contrast(1.5) brightness(0.5) grayscale(1) drop-shadow(2px 4px 6px black);
+    filter: contrast(1.5) brightness(0.5) drop-shadow(2px 4px 6px black);
     opacity: 0.5;
     pointer-events: none;
     position: absolute;
