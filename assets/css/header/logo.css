@@ -4,8 +4,8 @@
 .wc-header__logo--link {
   /* color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ffffff; */
-  color: #fff;
+  -webkit-text-stroke-color: var(--secondary-color)fff; */
+  color: var(--secondary-color);
   text-decoration: none;
   transition: all 0.4s ease;
   display: flex;
@@ -32,10 +32,10 @@
   position: absolute;
   top: -0.5rem;
   left: -0.5rem;
-  background: #fff;
+  background: var(--secondary-color);
 }
 .wc-header__logo--link path {
-  fill: #fff;
+  fill: var(--secondary-color);
   fill-opacity: 1;
   stroke-dasharray: 12860 12862;
   stroke-dashoffset: 12861;
@@ -43,7 +43,7 @@
 }
 .wc-header__logo--link:hover path {
   /* fill: none; */
-  fill: #fff;
+  fill: var(--secondary-color);
   stroke-dasharray: 12860 12862;
   stroke-dashoffset: 12861;
   animation: wc_logo_hover 2000ms ease-in 0ms forwards;
