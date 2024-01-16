@@ -3,12 +3,7 @@
   margin: 0;
   padding: 7rem 10% 7rem;
   background: var(--color-linear-gradient-3);
-  min-height: calc(100vh - 17rem);
-}
-@media only screen and (min-width: 1024px) {
-  #wc-contact {
-    min-height: calc(100vh - 17rem);
-  }
+  min-height: 50vh;
 }
 .wc-contact__form {
   display: flex;
