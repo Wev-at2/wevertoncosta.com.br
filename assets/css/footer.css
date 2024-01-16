@@ -13,7 +13,7 @@
   align-items: center;
   padding: 0.75rem 1.5rem;
   background: rgb(5, 25, 51);
-  background: var(--color-linear-gradient-1)
+  background: var(--color-linear-gradient-1);
 }
 @media only screen and (max-width: 767px) {
   .wc-footer {
