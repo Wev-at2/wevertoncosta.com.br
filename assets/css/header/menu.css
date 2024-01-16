@@ -34,11 +34,13 @@
 .wc-header__menu--nav_item a:is(:hover, :focus)::after {
   width: calc(100% - 0.3rem);
 }
-#btn-mobile {
-  display: none;
-}
 /* header menu mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 1024px) {
+  #btn-mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
   .wc-header__menu--nav_items {
     display: flex;
     flex-direction: column;

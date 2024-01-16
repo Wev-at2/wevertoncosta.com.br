@@ -23,7 +23,7 @@
   background: var(--color-linear-gradient-1);
   /* box-shadow: var(--boxshadow-slide_down-1); */
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .wc-header {
     background: var(--color-blue-1);
     background: var(--color-linear-gradient-1);

@@ -11,6 +11,12 @@ section {
   padding: 7rem 0 0;
   max-width: 80%;
   width: 100%;
+  visibility: hidden;
+}
+@media only screen and (min-width: 1024px) {
+  section {
+    min-height: calc(100vh - 7rem);
+  }
 }
 section h2 {
   color: var(--primary-color);

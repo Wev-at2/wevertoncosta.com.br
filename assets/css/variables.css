@@ -58,9 +58,9 @@
     var(--color-black) 100%
   );
   --color-linear-gradient-3: linear-gradient(
-    0deg,
+    180deg,
     var(--color-black) 0%,
-    var(--color-purple) 40%,
+    var(--color-purple) 30%,
     var(--color-black) 80%
   );
 
