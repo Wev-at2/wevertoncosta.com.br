@@ -50,13 +50,13 @@
 }
 @keyframes wc_logo {
   0% {
-    fill-opacity: 1;
+    fill-opacity: .6;
   }
   10% {
-    fill-opacity: 0.2;
+    fill-opacity: .3;
   }
   90% {
-    fill-opacity: 1;
+    fill-opacity: 0;
     stroke-dashoffset: 0;
   }
 }
