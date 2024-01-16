@@ -38,6 +38,7 @@
   width: 70%;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 .wc-main__banner--content_title,
 .wc-main__banner--content_description {
@@ -173,7 +174,7 @@
     height: 100%;
   }
   .wc-main__banner--content {
-    top: 4.3rem;
+    top: 6rem;
     padding-top: 2rem;
     max-width: 100%;
     flex-direction: column-reverse;
