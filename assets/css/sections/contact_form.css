@@ -1,0 +1,56 @@
+.wc-contact__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--color-white-transparency-2);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.wc-contact__form p {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+.wc-contact__form > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.wc-contact__form > div label {
+  font-family: var(--font-family-title);
+}
+.wc-contact__form > div input,
+.wc-contact__form > div textarea {
+  padding: 0.5rem;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  outline: none;
+}
+.wc-contact__form > div textarea {
+  padding: 0.5rem;
+  font-size: var(--font-size-base);
+}
+.wc-contact__name,
+.wc-contact__email {
+  max-width: 100%;
+  flex: 1;
+}
+.wc-contact__message {
+  width: 100%;
+}
+.wc-contact__submit {
+  width: 100%;
+}
+.wc-contact__submit input {
+  text-transform: uppercase;
+  font-family: var(--font-family-title);
+  color: var(--color-black);
+  background: var(--secondary-color);
+}
+@media only screen and (max-width: 767px) {
+  .wc-contact__form {
+    padding: 1rem;
+  }
+}
