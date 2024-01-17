@@ -133,7 +133,7 @@ element {
   color: var(--primary-color);
   color: var(--secondary-color);
 
-  /* TRANSIOTIONS */
+  /* TRANSITIONS */
   transition: var(--transition);
   transition: var(--transition-1s);
 
