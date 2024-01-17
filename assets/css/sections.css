@@ -4,6 +4,11 @@
 @import url(./sections/projects.css);
 @import url(./sections/contact.css);
 
+@media only screen and (min-width: 1024px) {
+  section {
+    min-height: calc(100vh - 7rem);
+  }
+}
 section {
   font-family: var(--font-family-base);
   color: var(--secondary-color);
@@ -11,12 +16,7 @@ section {
   padding: 7rem 0 0;
   max-width: 80%;
   width: 100%;
-  visibility: hidden;
-}
-@media only screen and (min-width: 1024px) {
-  section {
-    min-height: calc(100vh - 7rem);
-  }
+  /* visibility: hidden; */
 }
 section h2 {
   color: var(--primary-color);
