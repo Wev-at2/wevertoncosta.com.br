@@ -39,6 +39,11 @@
   #btn-mobile {
     display: none;
   }
+  .wc-header__menu--nav #btn-mobile:is(:hover) {
+    transform: rotate(360deg);
+    transform: scale(1.5);
+    transition: all 0.4s ease;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .wc-header__menu--nav_items {
@@ -61,13 +66,6 @@
     visibility: hidden;
     overflow-y: hidden;
     pointer-events: none;
-  }
-  .wc-header__menu--nav.active .wc-header__menu--nav_items {
-    visibility: visible;
-    overflow-y: auto;
-    pointer-events: all;
-    height: 100vh;
-    padding: 2rem 0;
   }
   .wc-header__menu--nav_item {
     width: 100%;
@@ -96,11 +94,6 @@
     cursor: pointer;
     transition: all 0.4s ease;
   }
-  .wc-header__menu--nav #btn-mobile:is(:hover) {
-    transform: rotate(360deg);
-    transform: scale(1.5);
-    transition: all 0.4s ease;
-  }
   .wc-header__menu--nav.active #btn-mobile:focus {
     transform: skew(0deg, 0deg);
   }
@@ -120,6 +113,13 @@
     background: #fff;
     position: relative;
     transition: 0.4s;
+  }
+  .wc-header__menu--nav.active .wc-header__menu--nav_items {
+    visibility: visible;
+    overflow-y: auto;
+    pointer-events: all;
+    height: 100vh;
+    padding: 2rem 0;
   }
   .wc-header__menu--nav.active #hamburguer {
     border-top: transparent;
