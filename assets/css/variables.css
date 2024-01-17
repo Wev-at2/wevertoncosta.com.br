@@ -29,18 +29,25 @@
   --line-height-big: 2;
 
   /* //// COLORS //// */
-  --color-golden: #daa520;
-  --color-black: #000;
-  --color-white: #fff;
-  --color-blue-1: #093366;
-  --color-blue-2: #051933;
-  --color-purple: #340d4c;
+  --color-black: #000000;
+  --color-white: #ffffff;
   --color-red: #ff0000;
+  --color-purple: #340d4c;
+
+  --color-blue-1: #0d3e80;
+  --color-blue-2: #093366;
+  --color-blue-3: #051933;
+
+  --color-golden-1: #daa520;
+  --color-golden-2: #80610d;
+  --color-golden-3: #332e05;
 
   --color-gray-1: #efefef;
   --color-gray-2: #d9d9d9;
-  --color-gray-3: #808080;
-  --color-gray-4: #383838;
+  --color-gray-3: #cccccc;
+  --color-gray-4: #808080;
+  --color-gray-5: #383838;
+  --color-gray-6: #333333;
 
   --color-black-transparency: #000000b3;
   --color-white-transparency: #ffffffb3;
@@ -48,13 +55,13 @@
 
   --color-linear-gradient-1: linear-gradient(
     0deg,
-    var(--color-blue-2) 0%,
-    var(--color-blue-1) 50%
+    var(--color-blue-3) 0%,
+    var(--color-blue-2) 50%
   );
   --color-linear-gradient-2: linear-gradient(
     0deg,
     var(--color-black) 0%,
-    var(--color-blue-1) 50%,
+    var(--color-blue-2) 50%,
     var(--color-black) 100%
   );
   --color-linear-gradient-3: linear-gradient(
@@ -64,19 +71,31 @@
     var(--color-black) 80%
   );
 
+  --color-matching-1: var(--color-blue-3);
+  --color-matching-2: var(--color-blue-1);
+  --color-matching-3: var(--color-golden-3);
+  --color-matching-4: var(--color-golden-2);
+  --color-matching-5: var(--color-gray-3);
+  --color-matching-6: var(--color-gray-6);
+
   --main-bg-color: var(--color-black);
-  --primary-color: var(--color-golden);
+  --primary-color: var(--color-golden-1);
   --secondary-color: var(--color-white);
 
   /* //// TRANSITIONS //// */
   --transition: all 0.4s ease;
-  
+  --transition-1s: all 1s ease;
+
   /* //// BOX-SHADOW //// */
   --boxshadow-hover-1: 1px 1px 20px -2px var(--color-white-transparency-2);
-  --boxshadow-slide_down: inset 0 100px 0 0 var(--secondary-color);
-  --boxshadow-slide_right: inset 400px 0 0 0 var(--secondary-color);
-  --boxshadow-slide_left: inset 0 0 0 50px var(--secondary-color);
-  --boxshadow-slide_diagonal: inset 400px 50px 0 0 var(--secondary-color);
+  --boxshadow-slide-golden_down: inset 0 100px 0 0 var(--primary-color);
+  --boxshadow-slide-golden_right: inset 400px 0 0 0 var(--primary-color);
+  --boxshadow-slide-golden_left: inset 0 0 0 50px var(--primary-color);
+  --boxshadow-slide-golden_diagonal: inset 400px 50px 0 0 var(--primary-color);
+  --boxshadow-slide-white_down: inset 0 100px 0 0 var(--secondary-color);
+  --boxshadow-slide-white_right: inset 400px 0 0 0 var(--secondary-color);
+  --boxshadow-slide-white_left: inset 0 0 0 50px var(--secondary-color);
+  --boxshadow-slide-white_diagonal: inset 400px 50px 0 0 var(--secondary-color);
 }
 element {
   /* FONT-FAMILY */
@@ -85,7 +104,7 @@ element {
   font-family: var(--font-family-base);
   font-family: var(--font-family-other-1);
   font-family: var(--font-family-other-2);
-  
+
   /* FONT-SIZE */
   font-size: var(--font-size-smaller);
   font-size: var(--font-size-small);
@@ -96,31 +115,36 @@ element {
   font-size: var(--font-size-bigx);
   font-size: var(--font-size-title);
   font-size: var(--font-size-giant);
-  
+
   /* FONT-WEIGHT */
   font-weight: var(--font-weight-lighter);
   font-weight: var(--font-weight-light);
   font-weight: var(--font-weight-regular);
   font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-ultrabold);
-  
+
   /* LINE-HEIGHT */
   line-height: var(--line-height-small);
   line-height: var(--line-height-medium);
   line-height: var(--line-height-big);
-  
+
   /* COLORS */
   background-color: var(--main-bg-color);
   color: var(--primary-color);
   color: var(--secondary-color);
-  
+
   /* TRANSIOTIONS */
   transition: var(--transition);
-  
+  transition: var(--transition-1s);
+
   /* BOX-SHADOWS */
   box-shadow: var(--boxshadow-hover-1);
-  box-shadow: var(--boxshadow-slide_down);
-  box-shadow: var(--boxshadow-slide_right);
-  box-shadow: var(--boxshadow-slide_left);
-  box-shadow: var(--boxshadow-slide_diagonal);
+  box-shadow: var(--boxshadow-slide-golden_down);
+  box-shadow: var(--boxshadow-slide-golden_right);
+  box-shadow: var(--boxshadow-slide-golden_left);
+  box-shadow: var(--boxshadow-slide-golden_diagonal);
+  box-shadow: var(--boxshadow-slide-white_down);
+  box-shadow: var(--boxshadow-slide-white_right);
+  box-shadow: var(--boxshadow-slide-white_left);
+  box-shadow: var(--boxshadow-slide-white_diagonal);
 }
