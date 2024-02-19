@@ -1,17 +1,19 @@
-import { slickSlide } from "./slick_slide.js";
 import { menuScroll } from "./menu_scroll.js";
 import { setupMenu } from "./menu_mobile.js";
 import { setupSlideEffect } from "./slideSections.js";
 import { typeWrite } from "./typeWrite.js";
 
-document.addEventListener("DOMContentLoaded", function () {
-    slickSlide();
-});
 menuScroll();
 setupMenu();
 setupSlideEffect();
 typeWrite(document.querySelector(".typewriter"));
+// ============================================================
+// import { slickSlide } from "./slick_slide.js";
+// document.addEventListener("DOMContentLoaded", function () {
+//     slickSlide();
+// });
 
+// ============================================================
 // import { readMore } from "./readMore.js";
 // readMore(document.querySelector(".leiamais"));
 
