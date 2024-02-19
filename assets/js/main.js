@@ -4,7 +4,9 @@ import { setupMenu } from "./menu_mobile.js";
 import { setupSlideEffect } from "./slideSections.js";
 import { typeWrite } from "./typeWrite.js";
 
-slickSlide();
+document.addEventListener("DOMContentLoaded", function () {
+    slickSlide();
+});
 menuScroll();
 setupMenu();
 setupSlideEffect();

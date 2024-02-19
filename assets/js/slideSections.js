@@ -11,5 +11,4 @@ export function setupSlideEffect() {
         interval: 200,
     });
     sr.reveal(".wc-experience *", { duration: 1000 });
-    // sr.reveal(".wc-projects", { duration: 1500 });
 }
