@@ -2,30 +2,30 @@
 @import url(./header/menu.css);
 
 .wc-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: var(--font-family-title);
-  color: var(--color-white);
-  background: transparent;
-  width: 100%;
-  padding: 10px 10%;
-  box-sizing: border-box;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  transition: var(--transition);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family-title);
+    color: var(--color-white);
+    background: transparent;
+    width: 100%;
+    padding: 10px 10%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    transition: var(--transition);
 }
 .fixed {
-  background: var(--color-blue-2);
-  background: var(--color-linear-gradient-1);
-  /* box-shadow: var(--boxshadow-slide_down-1); */
-}
-@media only screen and (max-width: 1024px) {
-  .wc-header {
     background: var(--color-blue-2);
     background: var(--color-linear-gradient-1);
-  }
+    /* box-shadow: var(--boxshadow-slide_down-1); */
+}
+@media only screen and (max-width: 1024px) {
+    .wc-header {
+        background: var(--color-blue-2);
+        background: var(--color-linear-gradient-1);
+    }
 }

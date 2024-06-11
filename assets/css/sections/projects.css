@@ -144,6 +144,10 @@
     cursor: pointer;
     content: "";
 }
+.wc-projects__items .slick-prev::before,
+.wc-projects__items .slick-next::before {
+    display: none !important;
+}
 @media only screen and (max-width: 767px) {
     .wc-projects__items .slick-prev::after,
     .wc-projects__items .slick-next::after {
@@ -187,6 +191,9 @@
     color: var(--color-white-transparency);
     background: var(--color-white-transparency);
     cursor: pointer;
+}
+.wc-projects__items .slick-dots button::before {
+    display: none !important;
 }
 .wc-projects__items .slick-dots .slick-active button::after {
     background: var(--color-linear-gradient-1);
