@@ -168,6 +168,9 @@
     justify-content: center;
     gap: 0.5rem;
 }
+.wc-projects__items .slick-dots li {
+    margin: 0 !important;
+}
 .wc-projects__items .slick-dots button {
     border: none;
     background: transparent;
