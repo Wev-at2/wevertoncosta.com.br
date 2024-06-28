@@ -1,150 +1,154 @@
 :root {
-  /* //// TYPOGRAPHY //// */
-  --font-family-title: "Monument Extended Regular", sans-serif;
-  --font-family-title-ultrabold: "Monument Extended Ultrabold", sans-serif;
-  /* --font-family-title: "Glacial Indifference", sans-serif; */
-  /* --font-family-title-bold: "Glacial Indifference Bold", sans-serif; */
-  --font-family-base: monospace, sans-serif;
-  --font-family-other-1: "Fira Code", sans-serif;
-  --font-family-other-2: "Open Sans", sans-serif;
+    /* //// TYPOGRAPHY //// */
+    --font-family-title: "Monument Extended Regular", sans-serif;
+    --font-family-title-ultrabold: "Monument Extended Ultrabold", sans-serif;
+    /* --font-family-title: "Glacial Indifference", sans-serif; */
+    /* --font-family-title-bold: "Glacial Indifference Bold", sans-serif; */
+    --font-family-base: monospace, sans-serif;
+    --font-family-other-1: "Fira Code", sans-serif;
+    --font-family-other-2: "Open Sans", sans-serif;
 
-  --font-size-smaller: 0.625rem; /* 10px */
-  --font-size-small: 0.75rem; /* 12px */
-  --font-size-medium: 0.875rem; /* 14px */
-  --font-size-base: 1rem; /* 16px */
-  --font-size-subtitle: 1.125rem; /* 18px */
-  --font-size-big: 1.5rem; /* 24px */
-  --font-size-bigx: 1.75rem; /* 28px */
-  --font-size-title: 2rem; /* 32px */
-  --font-size-giant: 4rem; /* 64px */
+    --font-size-smaller: 0.625rem; /* 10px */
+    --font-size-small: 0.75rem; /* 12px */
+    --font-size-medium: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-subtitle: 1.125rem; /* 18px */
+    --font-size-big: 1.5rem; /* 24px */
+    --font-size-bigx: 1.75rem; /* 28px */
+    --font-size-title: 2rem; /* 32px */
+    --font-size-giant: 4rem; /* 64px */
 
-  --font-weight-lighter: 100;
-  --font-weight-light: 300;
-  --font-weight-regular: 500;
-  --font-weight-bold: 700;
-  --font-weight-ultrabold: 900;
+    --font-weight-lighter: 100;
+    --font-weight-light: 300;
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+    --font-weight-ultrabold: 900;
 
-  --line-height-small: 1;
-  --line-height-medium: 1.5;
-  --line-height-big: 2;
+    --line-height-small: 1;
+    --line-height-medium: 1.5;
+    --line-height-big: 2;
 
-  /* //// COLORS //// */
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-red: #ff0000;
-  --color-purple: #340d4c;
+    /* //// COLORS //// */
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-red: #ff0000;
+    --color-purple: #340d4c;
 
-  --color-blue-1: #0d3e80;
-  --color-blue-2: #093366;
-  --color-blue-3: #051933;
+    --color-blue-1: #3562a6;
+    --color-blue-2: #0e1e5b;
+    --color-blue-3: #091442;
+    --color-blue-4: #0d3e80;
+    --color-blue-5: #093366;
+    --color-blue-6: #051933;
 
-  --color-golden-1: #daa520;
-  --color-golden-2: #80610d;
-  --color-golden-3: #332e05;
+    --color-golden-1: #daa520;
+    --color-golden-2: #80610d;
+    --color-golden-3: #332e05;
 
-  --color-gray-1: #efefef;
-  --color-gray-2: #d9d9d9;
-  --color-gray-3: #cccccc;
-  --color-gray-4: #808080;
-  --color-gray-5: #383838;
-  --color-gray-6: #333333;
+    --color-gray-1: #efefef;
+    --color-gray-2: #d9d9d9;
+    --color-gray-3: #cccccc;
+    --color-gray-4: #808080;
+    --color-gray-5: #383838;
+    --color-gray-6: #333333;
 
-  --color-black-transparency: #000000b3;
-  --color-white-transparency: #ffffffb3;
-  --color-white-transparency-2: #ffffff0f;
+    --color-black-transparency: #000000b3;
+    --color-white-transparency: #ffffffb3;
+    --color-white-transparency-2: #ffffff0f;
 
-  --color-linear-gradient-1: linear-gradient(
-    0deg,
-    var(--color-blue-3) 0%,
-    var(--color-blue-2) 50%
-  );
-  --color-linear-gradient-2: linear-gradient(
-    0deg,
-    var(--color-black) 0%,
-    var(--color-blue-2) 50%,
-    var(--color-black) 100%
-  );
-  --color-linear-gradient-3: linear-gradient(
-    180deg,
-    var(--color-black) 0%,
-    var(--color-purple) 30%,
-    var(--color-black) 80%
-  );
+    --color-linear-gradient-1: linear-gradient(
+        0deg,
+        var(--color-blue-3) 0%,
+        var(--color-blue-2) 50%
+    );
+    --color-linear-gradient-2: linear-gradient(
+        0deg,
+        var(--color-black) 0%,
+        var(--color-blue-2) 50%,
+        var(--color-black) 100%
+    );
+    --color-linear-gradient-3: linear-gradient(
+        180deg,
+        var(--color-black) 0%,
+        var(--color-blue-2) 30%,
+        var(--color-black) 80%
+    );
 
-  --color-matching-1: var(--color-blue-3);
-  --color-matching-2: var(--color-blue-1);
-  --color-matching-3: var(--color-golden-3);
-  --color-matching-4: var(--color-golden-2);
-  --color-matching-5: var(--color-gray-3);
-  --color-matching-6: var(--color-gray-6);
+    --color-matching-1: var(--color-blue-3);
+    --color-matching-2: var(--color-blue-1);
+    --color-matching-3: var(--color-golden-3);
+    --color-matching-4: var(--color-golden-2);
+    --color-matching-5: var(--color-gray-3);
+    --color-matching-6: var(--color-gray-6);
 
-  --main-bg-color: var(--color-black);
-  --primary-color: var(--color-golden-1);
-  --secondary-color: var(--color-white);
+    --main-bg-color: var(--color-black);
+    --primary-color: var(--color-golden-1);
+    --secondary-color: var(--color-white);
 
-  /* //// TRANSITIONS //// */
-  --transition: all 0.4s ease;
-  --transition-1s: all 1s ease;
+    /* //// TRANSITIONS //// */
+    --transition: all 0.4s ease;
+    --transition-1s: all 1s ease;
 
-  /* //// BOX-SHADOW //// */
-  --boxshadow-hover-1: 1px 1px 20px -2px var(--color-white-transparency-2);
-  --boxshadow-slide-golden_down: inset 0 100px 0 0 var(--primary-color);
-  --boxshadow-slide-golden_right: inset 400px 0 0 0 var(--primary-color);
-  --boxshadow-slide-golden_left: inset 0 0 0 50px var(--primary-color);
-  --boxshadow-slide-golden_diagonal: inset 400px 50px 0 0 var(--primary-color);
-  --boxshadow-slide-white_down: inset 0 100px 0 0 var(--secondary-color);
-  --boxshadow-slide-white_right: inset 400px 0 0 0 var(--secondary-color);
-  --boxshadow-slide-white_left: inset 0 0 0 50px var(--secondary-color);
-  --boxshadow-slide-white_diagonal: inset 400px 50px 0 0 var(--secondary-color);
+    /* //// BOX-SHADOW //// */
+    --boxshadow-hover-1: 1px 1px 20px -2px var(--color-white-transparency-2);
+    --boxshadow-slide-golden_down: inset 0 100px 0 0 var(--primary-color);
+    --boxshadow-slide-golden_right: inset 400px 0 0 0 var(--primary-color);
+    --boxshadow-slide-golden_left: inset 0 0 0 50px var(--primary-color);
+    --boxshadow-slide-golden_diagonal: inset 400px 50px 0 0 var(--primary-color);
+    --boxshadow-slide-white_down: inset 0 100px 0 0 var(--secondary-color);
+    --boxshadow-slide-white_right: inset 400px 0 0 0 var(--secondary-color);
+    --boxshadow-slide-white_left: inset 0 0 0 50px var(--secondary-color);
+    --boxshadow-slide-white_diagonal: inset 400px 50px 0 0
+        var(--secondary-color);
 }
 element {
-  /* FONT-FAMILY */
-  font-family: var(--font-family-title);
-  font-family: var(--font-family-title-ultrabold);
-  font-family: var(--font-family-base);
-  font-family: var(--font-family-other-1);
-  font-family: var(--font-family-other-2);
+    /* FONT-FAMILY */
+    font-family: var(--font-family-title);
+    font-family: var(--font-family-title-ultrabold);
+    font-family: var(--font-family-base);
+    font-family: var(--font-family-other-1);
+    font-family: var(--font-family-other-2);
 
-  /* FONT-SIZE */
-  font-size: var(--font-size-smaller);
-  font-size: var(--font-size-small);
-  font-size: var(--font-size-medium);
-  font-size: var(--font-size-base);
-  font-size: var(--font-size-subtitle);
-  font-size: var(--font-size-big);
-  font-size: var(--font-size-bigx);
-  font-size: var(--font-size-title);
-  font-size: var(--font-size-giant);
+    /* FONT-SIZE */
+    font-size: var(--font-size-smaller);
+    font-size: var(--font-size-small);
+    font-size: var(--font-size-medium);
+    font-size: var(--font-size-base);
+    font-size: var(--font-size-subtitle);
+    font-size: var(--font-size-big);
+    font-size: var(--font-size-bigx);
+    font-size: var(--font-size-title);
+    font-size: var(--font-size-giant);
 
-  /* FONT-WEIGHT */
-  font-weight: var(--font-weight-lighter);
-  font-weight: var(--font-weight-light);
-  font-weight: var(--font-weight-regular);
-  font-weight: var(--font-weight-bold);
-  font-weight: var(--font-weight-ultrabold);
+    /* FONT-WEIGHT */
+    font-weight: var(--font-weight-lighter);
+    font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-regular);
+    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-ultrabold);
 
-  /* LINE-HEIGHT */
-  line-height: var(--line-height-small);
-  line-height: var(--line-height-medium);
-  line-height: var(--line-height-big);
+    /* LINE-HEIGHT */
+    line-height: var(--line-height-small);
+    line-height: var(--line-height-medium);
+    line-height: var(--line-height-big);
 
-  /* COLORS */
-  background-color: var(--main-bg-color);
-  color: var(--primary-color);
-  color: var(--secondary-color);
+    /* COLORS */
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+    color: var(--secondary-color);
 
-  /* TRANSITIONS */
-  transition: var(--transition);
-  transition: var(--transition-1s);
+    /* TRANSITIONS */
+    transition: var(--transition);
+    transition: var(--transition-1s);
 
-  /* BOX-SHADOWS */
-  box-shadow: var(--boxshadow-hover-1);
-  box-shadow: var(--boxshadow-slide-golden_down);
-  box-shadow: var(--boxshadow-slide-golden_right);
-  box-shadow: var(--boxshadow-slide-golden_left);
-  box-shadow: var(--boxshadow-slide-golden_diagonal);
-  box-shadow: var(--boxshadow-slide-white_down);
-  box-shadow: var(--boxshadow-slide-white_right);
-  box-shadow: var(--boxshadow-slide-white_left);
-  box-shadow: var(--boxshadow-slide-white_diagonal);
+    /* BOX-SHADOWS */
+    box-shadow: var(--boxshadow-hover-1);
+    box-shadow: var(--boxshadow-slide-golden_down);
+    box-shadow: var(--boxshadow-slide-golden_right);
+    box-shadow: var(--boxshadow-slide-golden_left);
+    box-shadow: var(--boxshadow-slide-golden_diagonal);
+    box-shadow: var(--boxshadow-slide-white_down);
+    box-shadow: var(--boxshadow-slide-white_right);
+    box-shadow: var(--boxshadow-slide-white_left);
+    box-shadow: var(--boxshadow-slide-white_diagonal);
 }
