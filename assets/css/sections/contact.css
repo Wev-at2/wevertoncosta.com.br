@@ -1,40 +1,40 @@
 @import url(./contact_form.css);
 
 #wc-contact {
-  margin: 2rem auto;
-  margin: 0;
-  padding: 7rem 10% 7rem;
-  background: var(--color-linear-gradient-3);
-  min-height: 50vh;
+    margin: 2rem auto;
+    margin: 0;
+    padding: 7rem 10% 7rem;
+    background: var(--color-linear-gradient-3);
+    min-height: 50vh;
 }
 .wc-contact__flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .wc-contact__link {
-  font-family: var(--font-family-title);
-  color: var(--secondary-color);
-  border: 3px solid #fff;
-  padding: 1rem 2rem;
-  transition: var(--transition);
+    font-family: var(--font-family-title);
+    color: var(--secondary-color);
+    border: 3px solid #fff;
+    padding: 1rem 2rem;
+    transition: var(--transition);
 }
 .wc-contact__link:is(:hover, :focus) {
-  color: var(--color-black);
-  box-shadow: var(--boxshadow-slide-white_right);
+    color: var(--color-black);
+    box-shadow: var(--boxshadow-slide-white_right);
 }
 @media only screen and (max-width: 767px) {
-  .wc-contact__text {
-    padding: 0 0 1rem;
-    margin: 0;
-  }
-  .wc-contact__flex {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .wc-contact__link {
-    padding: 1rem;
-    text-align: center;
-  }
+    .wc-contact__text {
+        padding: 0 0 1rem;
+        margin: 0;
+    }
+    .wc-contact__flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .wc-contact__link {
+        padding: 1rem;
+        text-align: center;
+    }
 }
