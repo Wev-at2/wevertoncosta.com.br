@@ -8,12 +8,7 @@ export function setupSlideEffect() {
     sr.reveal(".wc-skills li", {
         duration: 2000,
         distance: "50px",
-        origin: "bottom",
-        easing: "ease-in-out",
-        delay: 300,
         interval: 200,
-        scale: 0.85,
-        opacity: 0,
     });
     sr.reveal(".wc-experience .wc-experience__item", {
         duration: 1500,
