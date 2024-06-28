@@ -6,9 +6,22 @@ export function setupSlideEffect() {
     });
     sr.reveal(".wc-about", { duration: 3000 });
     sr.reveal(".wc-skills li", {
-        duration: 1500,
+        duration: 2000,
         distance: "50px",
+        origin: "bottom",
+        easing: "ease-in-out",
+        delay: 300,
         interval: 200,
+        scale: 0.85,
+        opacity: 0,
     });
-    sr.reveal(".wc-experience *", { duration: 1000 });
+    sr.reveal(".wc-experience .wc-experience__item", {
+        duration: 1500,
+        origin: "bottom",
+        delay: 300,
+        easing: "ease-in-out",
+        interval: 200,
+        scale: 0.85,
+        opacity: 0,
+    });
 }
