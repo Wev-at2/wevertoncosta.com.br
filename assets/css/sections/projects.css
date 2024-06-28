@@ -206,3 +206,15 @@
     padding: 0.5rem 1rem;
     box-sizing: border-box;
 }
+@media only screen and (max-width: 767px) {
+    .wc-projects__items .slick-dots {
+        gap: 0.2rem;
+    }
+    .wc-projects__items .slick-dots li {
+        width: 0.8rem;
+    }
+    .wc-projects__items .slick-dots button::after {
+        width: 0.2rem;
+        height: 0.2rem;
+    }
+}
