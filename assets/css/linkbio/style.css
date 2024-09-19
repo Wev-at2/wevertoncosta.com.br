@@ -110,11 +110,13 @@
     letter-spacing: 0;
     line-height: normal;
     transition: var(--transition);
+    /* opacity: 0;
+    visibility: hidden; */
 }
-blockquote.tiktok-embed {
+/* blockquote.tiktok-embed {
     opacity: 0;
     visibility: hidden;
-}
+} */
 .wc-linkbio__secondary-links {
     position: relative;
     margin: 0;
