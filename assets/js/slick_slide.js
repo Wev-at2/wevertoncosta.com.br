@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Inicialize o carrossel Slick
     $(".wc-projects__items").slick({
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         dots: true,
         infinite: true,
         speed: 300,
@@ -16,13 +16,6 @@ $(document).ready(function () {
             },
             {
                 breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
