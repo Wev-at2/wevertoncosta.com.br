@@ -2,10 +2,12 @@ $(document).ready(function () {
     // Inicialize o carrossel Slick
     $(".wc-projects__items").slick({
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
+        centerMode: true,
         dots: true,
+        centerPadding: "3px",
+        speed: 900,
         infinite: true,
-        speed: 300,
         responsive: [
             {
                 breakpoint: 1024,

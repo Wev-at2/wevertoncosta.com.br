@@ -1,3 +1,6 @@
+/* .wc-skills {
+    background: var(--color-linear-gradient-2);
+} */
 .wc-skills__items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));

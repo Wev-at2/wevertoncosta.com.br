@@ -54,7 +54,7 @@
 
     --color-black-transparency: #000000b3;
     --color-white-transparency: #ffffffb3;
-    --color-white-transparency-2: #ffffff0f;
+    --color-white-transparency-2: #ffffff3d;
 
     --color-linear-gradient-1: linear-gradient(
         0deg,
@@ -90,7 +90,7 @@
     --transition-1s: all 1s ease;
 
     /* //// BOX-SHADOW //// */
-    --boxshadow-hover-1: 1px 1px 20px -2px var(--color-white-transparency-2);
+    --boxshadow-hover-1: 1px 1px 20px -2px var(--color-white-transparency);
     --boxshadow-slide-golden_down: inset 0 100px 0 0 var(--primary-color);
     --boxshadow-slide-golden_right: inset 400px 0 0 0 var(--primary-color);
     --boxshadow-slide-golden_left: inset 0 0 0 50px var(--primary-color);

@@ -1,30 +1,71 @@
+.wc-projects {
+    max-width: 100%;
+    width: 100%;
+    background: var(--color-linear-gradient-2);
+}
+.wc-projects__container {
+    width: 80%;
+    margin: 0 auto;
+}
 .wc-projects__items {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1rem;
 }
 .wc-projects__item {
-    height: 65vh; /*27rem;*/
+    height: 60vh; /*27rem;*/
     max-width: 100%;
-    padding: 2rem;
-    margin: 0 2rem;
-    margin-left: 0;
-    border: 2px solid transparent;
+    padding: 2rem 1rem;
+
+    margin: 3rem 0;
+    margin-right: 2rem;
+    border: 1px solid var(--color-white-transparency);
     border-radius: 10px;
-    background: var(--color-white-transparency-2);
+    background: transparent;
     transition: var(--transition);
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 4px 8px var(--color-white-transparency-2);
+    overflow: hidden;
+}
+.wc-projects__item.slick-center {
+    transform: scale(1.15);
+}
+.wc-projects__item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1s, background-color 0.3s;
+    z-index: 0;
+    filter: opacity(0.5);
+}
+.wc-projects__item:is(:hover, :focus)::before {
+    transform: translate(-50%, -50%) scale(8);
+    background-color: var(--color-white-transparency-2);
+}
+.wc-projects__item.slick-center:is(:hover, :focus) {
+    transform: scale(1.2);
 }
 .wc-projects__item:is(:hover, :focus) {
-    transform: scale(1.01);
-    border: 2px solid var(--color-white-transparency-2);
-    box-shadow: var(--boxshadow-hover-1);
+    transform: scale(1.05);
+    border: 1px solid var(--color-white-transparency);
+    /* box-shadow: var(--boxshadow-hover-1); */
+}
+.wc-projects__item--content,
+.wc-projects__item--links {
+    z-index: 1;
 }
 .wc-projects__item img {
     transition: var(--transition);
@@ -67,7 +108,7 @@
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 .wc-projects__item--links a {
     text-decoration: none;

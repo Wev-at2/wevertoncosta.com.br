@@ -1,53 +1,53 @@
 .wc-about {
-  margin: 0;
-  padding: 7rem 10% 7rem;
-  background: var(--color-linear-gradient-2);
+    margin: 0;
+    /* padding: 7rem 10% 7rem; */
+    background: var(--color-linear-gradient-2);
 }
 .wc-about__content {
-  height: 220px;
-  overflow: hidden;
-  position: relative;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
 }
 .wc-about__content::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
 }
 .wc-about__description strong,
 .wc-about__description a {
-  font-weight: 700;
-  color: var(--color-golden-1);
+    font-weight: 700;
+    color: var(--color-golden-1);
 }
 .wc-about__description a {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 .wc-about button#read-button {
-  background: transparent;
-  border: none;
-  font-weight: 700;
-  color: var(--color-golden-1);
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    color: var(--color-golden-1);
 }
 @media only screen and (min-width: 767px) {
-  .wc-about {
-    position: relative;
-  }
-  .wc-about::before {
-    content: "";
-    background: url("/assets/img/wc-about-bg2.webp") no-repeat top right;
-    filter: contrast(1.5) brightness(0.5) drop-shadow(5px 10px 5px black);
-    opacity: 0.5;
-    pointer-events: none;
-    position: absolute;
-    inset: 0;
-  }
+    .wc-about {
+        position: relative;
+    }
+    .wc-about::before {
+        content: "";
+        background: url("/assets/img/wc-about-bg2.webp") no-repeat top right;
+        filter: contrast(1.5) brightness(0.5) drop-shadow(5px 10px 5px black);
+        opacity: 0.5;
+        pointer-events: none;
+        position: absolute;
+        inset: 0;
+    }
 }
 @media only screen and (max-width: 767px) {
-  .wc-about::before {
-    background-position: top;
-  }
-  .wc-about__description {
-    text-align: justify;
-  }
+    .wc-about::before {
+        background-position: top;
+    }
+    .wc-about__description {
+        text-align: justify;
+    }
 }

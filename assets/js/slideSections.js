@@ -19,4 +19,16 @@ export function setupSlideEffect() {
         scale: 0.85,
         opacity: 0,
     });
+    sr.reveal(".wc-projects__items", {
+        duration: 1500,
+        origin: "bottom",
+        delay: 200,
+        easing: "ease-in-out",
+        interval: 200,
+        scale: 0.8,
+        opacity: 0,
+        // duration: 2000,
+        // distance: "50px",
+        // interval: 200,
+    });
 }

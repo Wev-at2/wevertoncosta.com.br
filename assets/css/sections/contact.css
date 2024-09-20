@@ -1,11 +1,10 @@
 @import url(./contact_form.css);
 
 #wc-contact {
-    margin: 2rem auto;
     margin: 0;
-    padding: 7rem 10% 7rem;
     background: var(--color-linear-gradient-3);
     min-height: 50vh;
+    /* margin: 2rem auto; */
 }
 .wc-contact__flex {
     display: flex;
