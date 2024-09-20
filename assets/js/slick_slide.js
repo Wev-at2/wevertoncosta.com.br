@@ -5,7 +5,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         centerMode: true,
         dots: true,
-        centerPadding: "3px",
+        centerPadding: "16px",
         speed: 900,
         infinite: true,
         responsive: [
