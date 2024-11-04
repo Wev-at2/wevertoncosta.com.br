@@ -235,6 +235,9 @@
 
         min-height: 0;
     }
+    .wc-projects__item p {
+        font-size: var(--font-size-small);
+    }
     .wc-projects__item--links {
         flex-wrap: wrap;
         margin: 0;
@@ -252,6 +255,7 @@
     .wc-projects__item--links a:not(:last-child) {
         margin: 0.5rem 0;
     }
+
     .wc-projects__item--skills {
         padding-bottom: 1.5rem;
     }
