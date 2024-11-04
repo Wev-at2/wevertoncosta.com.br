@@ -33,21 +33,6 @@
     box-shadow: 0 4px 8px var(--color-white-transparency-2);
     overflow: hidden;
 }
-@media only screen and (min-width: 767px) {
-    .wc-projects__item {
-        min-height: 60vh;
-        margin: 2.5rem 2rem;
-    }
-    .wc-projects__item:is(:hover, :focus) {
-        transform: scale(1.05);
-    }
-    .wc-projects__item.slick-center {
-        transform: scale(1.15);
-    }
-    .wc-projects__item.slick-center:is(:hover, :focus) {
-        transform: scale(1.2);
-    }
-}
 .wc-projects__item::before {
     content: "";
     position: absolute;
@@ -140,28 +125,6 @@
     transition: var(--transition-1s);
     box-shadow: var(--boxshadow-slide-golden_down);
 }
-@media only screen and (max-width: 767px) {
-    .wc-projects__item {
-        padding: 1rem;
-    }
-    .wc-projects__item--links {
-        flex-wrap: wrap;
-        margin: 0;
-    }
-    .wc-projects__item--links > li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .wc-projects__item--links a {
-        width: 100%;
-        padding: 0.5rem 0.8rem;
-    }
-    .wc-projects__item--links a:not(:last-child) {
-        margin: 0.5rem 0;
-    }
-}
 /* ==================================== */
 .wc-projects__items .slick-prev,
 .wc-projects__items .slick-next {
@@ -200,12 +163,6 @@
 .wc-projects__items .slick-prev::before,
 .wc-projects__items .slick-next::before {
     display: none !important;
-}
-@media only screen and (max-width: 520px) {
-    .wc-projects__items .slick-prev::after,
-    .wc-projects__items .slick-next::after {
-        display: none;
-    }
 }
 .wc-projects__items .slick-prev::after {
     transform: rotate(135deg);
@@ -257,7 +214,47 @@
     padding: 0.5rem 1rem;
     box-sizing: border-box;
 }
+@media only screen and (min-width: 767px) {
+    .wc-projects__item {
+        min-height: 60vh;
+        margin: 2.5rem 2rem;
+    }
+    .wc-projects__item:is(:hover, :focus) {
+        transform: scale(1.05);
+    }
+    .wc-projects__item.slick-center {
+        transform: scale(1.15);
+    }
+    .wc-projects__item.slick-center:is(:hover, :focus) {
+        transform: scale(1.2);
+    }
+}
 @media only screen and (max-width: 767px) {
+    .wc-projects__item {
+        padding: 1rem;
+
+        min-height: 0;
+    }
+    .wc-projects__item--links {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .wc-projects__item--links > li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .wc-projects__item--links a {
+        width: 100%;
+        padding: 0.5rem 0.8rem;
+    }
+    .wc-projects__item--links a:not(:last-child) {
+        margin: 0.5rem 0;
+    }
+    .wc-projects__item--skills {
+        padding-bottom: 1.5rem;
+    }
     .wc-projects__items .slick-dots {
         gap: 0.2rem;
     }
@@ -267,5 +264,11 @@
     .wc-projects__items .slick-dots button::after {
         width: 0.2rem;
         height: 0.2rem;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .wc-projects__items .slick-prev::after,
+    .wc-projects__items .slick-next::after {
+        display: none;
     }
 }

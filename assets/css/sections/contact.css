@@ -6,6 +6,9 @@
     min-height: 50vh;
     /* margin: 2rem auto; */
 }
+.wc-contact__container.container {
+    padding: 4rem 0;
+}
 .wc-contact__flex {
     display: flex;
     flex-direction: row;
