@@ -239,9 +239,11 @@
     }
     .wc-projects__item-subtitle {
         font-size: var(--font-size-base);
+        font-size: 1rem;
     }
     .wc-projects__item-description {
         font-size: var(--font-size-smaller);
+        font-size: 0.625rem;
     }
     .wc-projects__item--links {
         flex-wrap: wrap;
