@@ -62,7 +62,7 @@
     transition: var(--transition);
     width: 100%;
 }
-.wc-projects__item h3 {
+.wc-projects__item-subtitle {
     color: var(--primary-color);
     font-family: var(--font-family-title);
     font-size: var(--font-size-medium);
@@ -75,7 +75,7 @@
     -webkit-box-orient: vertical;
     white-space: normal;
 }
-.wc-projects__item p {
+.wc-projects__item-description {
     font-size: var(--font-size-small);
     min-height: 10ch;
 }
@@ -235,9 +235,6 @@
 
         min-height: 0;
     }
-    .wc-projects__item p {
-        font-size: var(--font-size-small);
-    }
     .wc-projects__item--links {
         flex-wrap: wrap;
         margin: 0;
@@ -255,7 +252,6 @@
     .wc-projects__item--links a:not(:last-child) {
         margin: 0.5rem 0;
     }
-
     .wc-projects__item--skills {
         padding-bottom: 1.5rem;
     }
