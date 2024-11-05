@@ -235,6 +235,12 @@
 
         min-height: 0;
     }
+    .wc-projects__item-subtitle {
+        font-size: var(--font-size-medium);
+    }
+    .wc-projects__item-description {
+        font-size: var(--font-size-small);
+    }
     .wc-projects__item--links {
         flex-wrap: wrap;
         margin: 0;
