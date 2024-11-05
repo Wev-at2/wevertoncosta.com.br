@@ -234,14 +234,14 @@
 @media only screen and (max-width: 767px) {
     .wc-projects__item {
         padding: 1rem;
-
         min-height: 0;
+        transform: none;
     }
     .wc-projects__item-subtitle {
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-base);
     }
     .wc-projects__item-description {
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-smaller);
     }
     .wc-projects__item--links {
         flex-wrap: wrap;
