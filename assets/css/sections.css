@@ -26,8 +26,8 @@ section p {
     line-height: 1.5;
     margin-bottom: 1rem;
 }
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     section .container {
         min-height: calc(100vh - 7rem);
     }
-}
+} */
