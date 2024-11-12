@@ -1,6 +1,6 @@
 .wc-about {
     margin: 0;
-    /* padding: 7rem 10% 7rem; */
+    padding: 0 0 7rem;
     background: var(--color-linear-gradient-2);
 }
 .wc-about__content {
