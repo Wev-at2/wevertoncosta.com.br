@@ -12,15 +12,3 @@ typeWrite(document.querySelector(".typewriter"));
 //     import { slickSlide } from "./slick_slide.js";
 //     slickSlide();
 // });
-
-// ============================================================
-// import { readMore } from "./readMore.js";
-// readMore(document.querySelector(".leiamais"));
-
-// import { phoneNumberUtils } from "./contactForm.js";
-// import { setupFormSubmit } from "./contactForm.js";
-// const phoneInput = document.getElementById("wc-contact__phone");
-// phoneInput.addEventListener("input", function () {
-//   phoneNumberUtils.format(this);
-// });
-// setupFormSubmit();
