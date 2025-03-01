@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
-      depth: 50,
+      depth: 100,
       modifier: 1,
       slideShadows: true,
     },
     autoplay: {
-      delay: 5000,
+      delay: 7000,
       disableOnInteraction: false,
     },
     pagination: {
