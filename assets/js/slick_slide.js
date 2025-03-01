@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    // Inicialize o carrossel Slick
     $(".wc-projects__items").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
