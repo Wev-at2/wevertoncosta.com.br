@@ -8,10 +8,10 @@ setupMenu();
 setupSlideEffect();
 typeWrite(document.querySelector(".typewriter"));
 // ============================================================
-document.addEventListener("DOMContentLoaded", function () {
-    import { slickSlide } from "./slick_slide.js";
-    slickSlide();
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//     import { slickSlide } from "./slick_slide.js";
+//     slickSlide();
+// });
 
 // ============================================================
 // import { readMore } from "./readMore.js";
