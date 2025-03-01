@@ -19,7 +19,6 @@
 .wc-projects__item {
     min-height: 80vh;
     max-width: 100%;
-    padding: 2rem 1rem;
     margin-right: 2rem !important;
     border: 1px solid var(--color-white-transparency);
     border-radius: 10px;
@@ -55,6 +54,17 @@
 .wc-projects__item:is(:hover, :focus, :focus-visible)::before {
     transform: translate(-50%, -50%) scale(8);
     background-color: var(--color-white-transparency-2);
+}
+h3.wc-projects__item-subtitle,
+.wc-projects__item-description {    
+    padding: 1rem 1rem 0;
+}
+.wc-projects__item--skills {    
+    padding: 0 1rem;
+}
+ul.wc-projects__item--links,
+ul.wc-projects__item--links a {    
+    padding: 1rem;
 }
 .wc-projects__item--content,
 .wc-projects__item--links {
@@ -234,6 +244,7 @@
 @media only screen and (max-width: 767px) {
     .wc-projects__item {
         padding: 1rem;
+        margin-right: 0 !important;
         min-height: 0;
         transform: none;
     }
