@@ -6,9 +6,7 @@ import { typeWrite } from "./typeWrite.js";
 menuScroll();
 setupMenu();
 setupSlideEffect();
-typeWrite(document.querySelector(".typewriter"));
-// ============================================================
-// document.addEventListener("DOMContentLoaded", function () {
-//     import { slickSlide } from "./slick_slide.js";
-//     slickSlide();
-// });
+const typewriterElement = document.querySelector(".typewriter");
+if (typewriterElement) {
+  typeWrite(typewriterElement);
+}

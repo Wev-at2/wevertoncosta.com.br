@@ -19,13 +19,4 @@ export function setupSlideEffect() {
         scale: 0.85,
         opacity: 0,
     });
-    // sr.reveal(".wc-projects__container", {
-    //     duration: 1500,
-    //     origin: "bottom",
-    //     delay: 200,
-    //     easing: "ease-in-out",
-    //     interval: 200,
-    //     scale: 0.8,
-    //     opacity: 0,
-    // });
 }
