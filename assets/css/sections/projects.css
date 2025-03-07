@@ -215,8 +215,8 @@ ul.wc-projects__item--links a {
 
 @media only screen and (max-width: 767px) {
     .wc-projects__item {
-        padding: 1rem;
-        margin: 0 !important;
+        width: 90%;
+        margin: 0 auto !important;
         min-height: 0;
         transform: none;
     }
@@ -230,19 +230,21 @@ ul.wc-projects__item--links a {
         font-size: 0.625rem;
     }
 
-    .wc-projects__item--links {
+    ul.wc-projects__item--links {
         flex-wrap: wrap;
         margin: 0;
+        padding-top: 0;
     }
-
+    
     .wc-projects__item--links>li {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin: 0;
     }
 
-    .wc-projects__item--links a {
+    .wc-projects__item--links li a {
         width: 100%;
         padding: 0.5rem 0.8rem;
     }
