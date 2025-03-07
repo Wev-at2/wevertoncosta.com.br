@@ -111,12 +111,12 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
 }
 a:hover {
-  cursor: url("/assets/svg/wcursor.svg") 5 0, auto;
+  cursor: url("/assets/svg/wcursor.svg") 5 0, pointer;
 }
 button:hover, 
 input[type="button"]:hover, 
 input[type="submit"]:hover {
-  cursor: url("/assets/svg/wcursor.svg") 5 0, auto;
+  cursor: url("/assets/svg/wcursor.svg") 5 0, pointer;
 }
 .wc-body {
   background-color: var(--main-bg-color);

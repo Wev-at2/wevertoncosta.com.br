@@ -161,7 +161,8 @@
 }
 @media only screen and (max-width: 767px) {
     .wc-main__banner {
-        height: 90vh;
+        /* height: 90vh; */
+        height: 100%;
     }
     .wc-main__banner--container {
         height: 100%;

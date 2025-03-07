@@ -4,7 +4,7 @@ export function setupSlideEffect() {
         duration: 2000,
         distance: "50px",
     });
-    sr.reveal(".wc-about", { duration: 3000 });
+    // sr.reveal(".wc-about", { duration: 3000 });
     sr.reveal(".wc-skills li", {
         duration: 2000,
         distance: "50px",

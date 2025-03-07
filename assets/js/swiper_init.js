@@ -7,15 +7,17 @@ export function swiperInit() {
       centeredSlidesBounds: true,
       slidesPerView: "auto",
       coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 20,
+        depth: 0,
         modifier: 1,
+        rotate: 50,
+        scale: 0.8,
+        stretch: 0,
         slideShadows: true,
       },
       autoplay: {
         delay: 6000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       pagination: {
         el: '.swiper-pagination',
@@ -27,11 +29,12 @@ export function swiperInit() {
       },
       breakpoints: {
         640: {
-          slidesPerView: 1,
+          slidesPerView: 1.2,
           spaceBetween: 20,
+          navigation: false,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 40,
         },
         1024: {
