@@ -31,6 +31,7 @@
 .wc-about button#read-button {
     background: transparent;
     border: none;
+    font-size: var(font-size-subtitle);
     font-weight: 700;
     color: var(--color-golden-1);
 }

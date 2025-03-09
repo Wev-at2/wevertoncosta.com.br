@@ -124,7 +124,8 @@ ul.wc-projects__item--links a {
     gap: 0.8rem;
 }
 
-.wc-projects__item--skills_item svg use {
+.wc-projects__item--skills_item svg use,
+.wc-projects__item--skills_item svg use path {
     fill: var(--primary-color) !important;
 }
 
