@@ -15,7 +15,7 @@ export function swiperInit() {
         slideShadows: true,
       },
       autoplay: {
-        delay: 9000,
+        delay: 10000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       },
