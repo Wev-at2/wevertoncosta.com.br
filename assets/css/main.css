@@ -26,8 +26,10 @@
     text-align: left;
 }
 .wc-main__banner--content_img {
-    width: 30%;
+    width: 40%;
     transition: var(--transition);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 1);
+    border-radius: 50%;
 }
 .wc-main__banner--content_img:hover {
     transform: scale(1.05);
@@ -176,7 +178,7 @@
         gap: 4rem;
     }
     .wc-main__banner--content_img {
-        width: 60%;
+        width: 70%;
     }
     .wc-main__banner--content_text {
         width: 100%;
