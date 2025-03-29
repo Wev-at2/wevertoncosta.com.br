@@ -1,12 +1,21 @@
-<svg id="skill-elementor-2" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
-    <title aria-hidden="true">ELEMENTOR</title>
-    <g>
-        <path d="m256.061 0c-141.385-.034-256.027 114.554-256.061 255.939s114.554 256.027 255.939 256.061 256.027-114.554 256.061-255.939c0-.02 0-.041 0-.061 0-141.361-114.578-255.966-255.939-256z" fill="#000000" />
-        <g fill="#ffffff">
-            <path d="m149.364 149.303h42.667v213.333h-42.667z" />
-            <path d="m234.697 319.97h128v42.667h-128z" />
-            <path d="m234.697 234.636h128v42.667h-128z" />
-            <path d="m234.697 149.303h128v42.667h-128z" />
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="skill-elementor-2" viewBox="0 0 512 512">
+        <title aria-hidden="true">ELEMENTOR</title>
+        <g>
+            <path
+                d="m256.061 0c-141.385-.034-256.027 114.554-256.061 255.939s114.554 256.027 255.939 256.061 256.027-114.554 256.061-255.939c0-.02 0-.041 0-.061 0-141.361-114.578-255.966-255.939-256z"
+                fill="#000000" />
+            <g fill="#ffffff">
+                <path d="m149.364 149.303h42.667v213.333h-42.667z" />
+                <path d="m234.697 319.97h128v42.667h-128z" />
+                <path d="m234.697 234.636h128v42.667h-128z" />
+                <path d="m234.697 149.303h128v42.667h-128z" />
+            </g>
         </g>
-    </g>
+    </symbol>
+    <symbol id="skill-elementor-2_simpleicon" viewBox="0 0 24 24">
+        <title aria-hidden="true">ELEMENTOR</title>
+        <path
+            d="M12 0C5.372 0 0 5.372 0 12c0 6.626 5.372 12 12 12s12-5.372 12-12c0-6.626-5.372-12-12-12ZM9 17H7V7H9Zm8 0H11V15h6Zm0-4H11V11h6Zm0-4H11V7h6Z" />
+    </symbol>
 </svg>

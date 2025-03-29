@@ -19,12 +19,16 @@
 .wc-skills__item svg {
     width: 100%;
     max-width: 4rem;
+    height: auto;
     filter: drop-shadow(0 0 4px transparent);
     transition: var(--transition);
 }
 .wc-skills__item:is(:hover, :focus, :focus-visible) svg {
     transform: scale(1.2);
-    filter: drop-shadow(0 0 8px currentColor);
+    filter: drop-shadow(0 0 8px var(--color-white-transparency-2));
+}
+#wc-skills__css svg use {
+    fill: #663399;
 }
 .wc-skills__item--text {
     font-family: var(--font-family-title);
