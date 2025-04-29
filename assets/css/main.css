@@ -35,7 +35,9 @@
     transform: scale(1.05);
 }
 .wc-main__banner--content_img > img {
+    border-radius: 50%;
     width: 100%;
+    max-width: none;
 }
 .wc-main__banner--content_text {
     width: 70%;

@@ -120,4 +120,30 @@ input[type="submit"]:hover {
 }
 .wc-body {
   background-color: var(--main-bg-color);
+  background: var(--color-radial-gradient-1);
+  background-attachment: fixed;
+  background-size: 200vw 200vw;
+  background-position: 0% 50%;
+  background-repeat: repeat;
+  animation: bg-slide 7s infinite alternate ease-in-out; 
+  filter: drop-shadow(5px 10px 5px black);
+  box-sizing: border-box;
+  transition: var(transition-1s);
 }
+
+@keyframes bg-slide {
+  0% {
+      background-size: 200vw 200vw;
+      background-position: -10% 60%;
+  }
+  100% {
+      background-size: 200vw 200vw;
+      background-position: 110% 40%;
+  }
+}
+/* @media only screen and (max-width: 767px) {
+  .wc-body {
+
+    width: 100%;
+  }
+} */

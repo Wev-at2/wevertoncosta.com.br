@@ -40,6 +40,7 @@
     --color-blue-4: #0d3e80;
     --color-blue-5: #093366;
     --color-blue-6: #051933;
+    --color-blue-7: #00092b;
 
     --color-golden-1: #daa520;
     --color-golden-2: #80610d;
@@ -59,7 +60,7 @@
     --color-linear-gradient-1: linear-gradient(
         0deg,
         var(--color-blue-3) 0%,
-        var(--color-blue-2) 50%
+        var(--color-blue-2) 60%
     );
     --color-linear-gradient-2: linear-gradient(
         0deg,
@@ -72,6 +73,11 @@
         var(--color-black) 0%,
         var(--color-blue-2) 30%,
         var(--color-black) 80%
+    );
+    --color-radial-gradient-1: radial-gradient(
+        circle,
+        var(--color-blue-2) 0%,
+        var(--color-black) 20%
     );
 
     --color-matching-1: var(--color-blue-3);

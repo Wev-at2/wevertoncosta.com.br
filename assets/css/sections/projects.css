@@ -1,7 +1,7 @@
 .wc-projects {
     max-width: 100%;
     width: 100%;
-    background: var(--color-linear-gradient-2);
+    /* background: var(--color-linear-gradient-2); */
 }
 
 .wc-projects .wc-projects__container {
