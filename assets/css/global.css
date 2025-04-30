@@ -148,16 +148,12 @@ input[type="submit"]:hover {
   }
   @keyframes bg-slide {
     0% {
-     background-size: 200vh 200vh;
-        background-position: 30% 90%;
-    }
-    50% {
-       background-size: 200vh 200vh;;
-      background-position: 60% 40%;
+     background-size: 200dvh 200dvh;
+        background-position: 30% 40%;
     }
     100% {
-     background-size: 200vh 200vh;
-        background-position: 30% 20%;
+       background-size: 200vh 200vh;;
+      background-position: 60% 70%;
     }
   }
 }
