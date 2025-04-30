@@ -115,22 +115,21 @@ a:hover {
 }
 button:hover, 
 input[type="button"]:hover, 
-input[type="submit"]:hover {
+input[type="submit"]:hover {  
   cursor: url("/assets/svg/wcursor.svg") 5 0, pointer;
 }
 .wc-body {
   background-color: var(--main-bg-color);
+  position: relative;
   background: var(--color-radial-gradient-1);
   background-attachment: fixed;
   background-size: 200vw 200vw;
   background-position: 0% 50%;
   background-repeat: repeat;
   animation: bg-slide 7s infinite alternate ease-in-out; 
-  filter: drop-shadow(5px 10px 5px black);
   box-sizing: border-box;
   transition: var(transition-1s);
 }
-
 @keyframes bg-slide {
   0% {
       background-size: 200vw 200vw;
@@ -141,9 +140,24 @@ input[type="submit"]:hover {
       background-position: 110% 40%;
   }
 }
-/* @media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .wc-body {
-
-    width: 100%;
+    background-size: 200vh 200vh !important;
+    /* background-position: 20% 50% !important; */
+    /* animation: bg-slide 7s infinite alternate ease-in-out !important; */
   }
-} */
+  @keyframes bg-slide {
+    0% {
+     background-size: 200vh 200vh;
+        background-position: 30% 90%;
+    }
+    50% {
+       background-size: 200vh 200vh;;
+      background-position: 60% 40%;
+    }
+    100% {
+     background-size: 200vh 200vh;
+        background-position: 30% 20%;
+    }
+  }
+}

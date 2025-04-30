@@ -9,6 +9,8 @@ section {
     color: var(--secondary-color);
     max-width: 100%;
     width: 100%;
+    box-sizing: border-box;
+    filter: drop-shadow(5px 10px 5px black) ; 
 }
 section .container {
     max-width: 80%;
