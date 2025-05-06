@@ -14,11 +14,11 @@ export function swiperInit() {
         stretch: 0,
         slideShadows: true,
       },
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-      },
+      // autoplay: {
+      //   delay: 10000,
+      //   disableOnInteraction: false,
+      //   pauseOnMouseEnter: true,
+      // },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
