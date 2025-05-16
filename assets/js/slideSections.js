@@ -10,7 +10,24 @@ export function setupSlideEffect() {
         distance: "50px",
         interval: 200,
     });
-    sr.reveal(".wc-experience .wc-experience__item", {
+    sr.reveal(".wc-about", {
+        duration: 1500,
+        origin: "bottom",
+        delay: 300,
+        easing: "ease-in-out",
+        interval: 200,
+        opacity: 0,
+    });
+    sr.reveal(".wc-experience", {
+        duration: 1500,
+        origin: "bottom",
+        delay: 300,
+        easing: "ease-in-out",
+        interval: 200,
+        scale: 0.85,
+        opacity: 0,
+    });
+    sr.reveal(".wc-projects__items", {
         duration: 1500,
         origin: "bottom",
         delay: 300,
