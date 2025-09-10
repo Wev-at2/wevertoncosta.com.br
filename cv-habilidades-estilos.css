@@ -1,0 +1,63 @@
+/* Estilo para os itens de habilidades dentro de cada categoria */
+.habilidades-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.habilidades-lista li {
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: white;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  transition: transform 0.2s ease;
+}
+
+.habilidades-lista li:hover {
+  transform: scale(1.05);
+}
+
+/* Cores específicas para cada tipo de habilidade */
+.habilidades-lista li:nth-child(1) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.habilidades-lista li:nth-child(2) {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.habilidades-lista li:nth-child(3) {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.habilidades-lista li:nth-child(4) {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+/* Ícones para as categorias */
+.categoria-tecnologias::before {
+  content: "💻 ";
+}
+
+.categoria-design-ui::before {
+  content: "🎨 ";
+}
+
+.categoria-plataformas::before {
+  content: "🚀 ";
+}
+
+.categoria-marketing-seo::before {
+  content: "📈 ";
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .habilidades-lista li {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}

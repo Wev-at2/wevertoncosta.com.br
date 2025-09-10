@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículo - Weverton Costa</title>
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://wevertoncosta.dev.br">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1,
+    h2 {
+      color: #111;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    p,
+    li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: #005b99;
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .info {
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .content {
+      transition: transform 0.3s ease;
+    }
+
+    .content:hover {
+      transform: scale(1.01) translateY(-2px);
+    }
+
+    .job-card {
+      background: #fefefe;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      transition: transform 0.3s ease;
+    }
+
+    .job-card:hover {
+      transform: scale(1.01);
+    }
+
+    .job-title {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .job-time {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 5px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    .iniciante {
+      background: #ffb74d;
+    }
+
+    /* laranja claro */
+    .intermediario {
+      background: #42a5f5;
+    }
+
+    /* azul claro */
+    .avancado {
+      background: #66bb6a;
+    }
+
+    /* verde médio */
+    /* Estilo para os itens de habilidades dentro de cada categoria */
+    .habilidades-lista {
+      list-style: none;
+      padding: 0;
+    }
+
+    .habilidades-lista li {
+      margin: 10px 0;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: white;
+      display: inline-block;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .habilidades-lista li:hover {
+      transform: scale(1.05);
+    }
+
+    /* Cores específicas para cada tipo de habilidade */
+    .habilidades-lista li:nth-child(1) {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .habilidades-lista li:nth-child(2) {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+
+    .habilidades-lista li:nth-child(3) {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    }
+
+    .habilidades-lista li:nth-child(4) {
+      background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    }
+
+    /* Ícones para as categorias */
+    .categoria-tecnologias::before {
+      content: "💻 ";
+    }
+
+    .categoria-design-ui::before {
+      content: "🎨 ";
+    }
+
+    .categoria-plataformas::before {
+      content: "🚀 ";
+    }
+
+    .categoria-marketing-seo::before {
+      content: "📈 ";
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .habilidades-lista li {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Weverton dos Santos Souza Costa</h1>
+      <p class="info">Desenvolvedor Front-end | UI Designer | SEO & Performance</p>
+      <p class="info">📍 São Paulo – SP |
+        📞 <a
+          href="https://wa.me/5511981304510?text=Olá%20Weverton,%20tudo%20bem?%20Vim%20aqui%20através%20do%20seu%20site%20portfólio."
+          target="_blank">(11) 98130-4510</a> /
+        <a href="https://wa.me/5511982989670?text=Oi%20Priscyla!%20Vim%20através%20do%20currículo%20do%20Weverton%20para%20deixar%20um%20recado."
+          target="_blank">(11) 98298-9670</a>
+      </p>
+      <p class="info">
+        ✉ <a href="mailto:wevertoncosta.dev@gmail.com">wevertoncosta.dev@gmail.com</a> |
+        🌐 <a href="http://wevertoncosta.dev.br" target="_blank">wevertoncosta.dev.br</a> |
+        💼 <a href="https://linkedin.com/in/weverton-costa" target="_blank">LinkedIn</a> |
+        💻 <a href="https://github.com/Wev-at2" target="_blank">GitHub</a>
+      </p>
+    </div>
+
+    <div class="content">
+      <h2>Resumo</h2>
+      <p>
+        Apaixonado por performance, SEO e experiências digitais marcantes. Atuo desde o design à implementação de sites
+        institucionais e e-commerces, focado em usabilidade, acessibilidade e conversão.
+      </p>
+    </div>
+
+    <div class="content">
+      <h2>Experiência Profissional</h2>
+
+      <div class="job-card">
+        <p class="job-title">Autônomo – Front-end Developer & UI Designer</p>
+        <p class="job-time">Agosto/2023 – Atual</p>
+        <ul>
+          <li>Criação de sites responsivos com foco em performance, UX e SEO.</li>
+          <li>Projetos em WordPress, Shopify e landing pages personalizadas.</li>
+          <li>Protótipos interativos em Figma e desenvolvimento web otimizado.</li>
+          <li>Projetos: WER TI, ANAC - Casa do Cardíaco, Kaiany Hipnoterapia</li>
+        </ul>
+      </div>
+
+      <div class="job-card">
+        <p class="job-title">Volúpia Digital – Webdesigner & SEO</p>
+        <p class="job-time">Novembro/2024 – Abril/2025</p>
+        <ul>
+          <li>Desenvolvimento em WordPress/Shopify com foco em conversão.</li>
+          <li>Integrações com RD Station, Salesforce e automações de e-mail.</li>
+          <li>Otimização técnica: Core Web Vitals, SEO on/off-page.</li>
+          <li>Projetos: Soul Hara, Gesstorha</li>
+        </ul>
+      </div>
+
+      <div class="job-card">
+        <p class="job-title">The Alfred Digital – Front-end Developer</p>
+        <p class="job-time">Abril/2022 – Agosto/2023</p>
+        <ul>
+          <li>Landing pages e manutenção de e-commerces (VTEX, Vnda).</li>
+          <li>Criação de e-mails marketing e integrações com Wake/Salesforce.</li>
+          <li>Projetos: Hausport, Kérastase, Meu Segredo Pro</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2>Habilidades Técnicas</h2>
+      <ul class="habilidades-lista">
+        <li class="categoria-habilidade categoria-tecnologias">
+          <strong>Tecnologias:</strong> HTML, CSS, JavaScript, PHP, Sass, TailwindCSS, Bootstrap, WordPress, Liquid, Git
+        </li>
+        <li class="categoria-habilidade categoria-design-ui">
+          <strong>Design & UI:</strong> Figma, UI Design, UX Design, Prototipagem, Responsividade
+        </li>
+        <li class="categoria-habilidade categoria-plataformas">
+          <strong>Plataformas:</strong> WordPress, VTEX, Shopify, Olist Vnda, Elementor, Wix, Tray
+        </li>
+        <li class="categoria-habilidade categoria-marketing-seo">
+          <strong>Marketing & SEO:</strong> Salesforce MC, RD Station, Wake, SEO técnico e on-page
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="content">
+      <h2>Formação & Cursos</h2>
+      <ul>
+        <li>Product Designer — Cubos Academy</li>
+        <li>Introdução ao Design de Interação (UI/UX) – TIC em Trilhas</li>
+        <li>HTML, CSS, JS Completo, UI Design, Flexbox, WordPress como CMS — Origamid</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
